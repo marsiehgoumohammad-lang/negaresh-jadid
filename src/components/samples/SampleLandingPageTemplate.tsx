@@ -1,0 +1,1097 @@
+'use client';
+
+import React, { useState } from 'react';
+import Link from 'next/link';
+import { motion, AnimatePresence } from 'motion/react';
+import { Container } from '@/components/ui/container';
+import {
+  FileText,
+  Sparkles,
+  ShieldCheck,
+  CheckCircle2,
+  Clock,
+  ChevronDown,
+  AlertTriangle,
+  HelpCircle,
+  ChevronLeft,
+  Send,
+  Check,
+  ShieldAlert,
+  BookOpen,
+  FileCheck,
+  Copy,
+  Download,
+  Printer,
+  PenTool,
+  Scale,
+  UserCheck,
+  Calendar,
+  Layers,
+  ArrowLeft,
+  AlertCircle,
+} from 'lucide-react';
+import { SampleLandingData } from '@/data/samples/types';
+import { generateMessengerLinks } from '@/lib/messengers-links';
+import { PreferredSourceCTA } from '@/components/common/PreferredSourceCTA';
+import {
+  Phone,
+  MessageCircle,
+  ExternalLink,
+} from 'lucide-react';
+
+export function SampleLandingPageTemplate({ data }: { data: SampleLandingData }) {
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const [copied, setCopied] = useState(false);
+  const [downloaded, setDownloaded] = useState(false);
+  const [downloadedWord, setDownloadedWord] = useState(false);
+  const [downloadedPdf, setDownloadedPdf] = useState(false);
+
+  const toggleFaq = (idx: number) => {
+    setOpenFaq(openFaq === idx ? null : idx);
+  };
+
+  const sampleContent =
+    data.content || data.sampleStructureContent || data.sampleText || '';
+
+  const handleCopyText = () => {
+    if (typeof window !== 'undefined' && sampleContent) {
+      navigator.clipboard.writeText(sampleContent);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 3000);
+    }
+  };
+
+  const handleDownloadTxt = () => {
+    if (typeof window !== 'undefined' && sampleContent) {
+      const element = document.createElement('a');
+      const file = new Blob([sampleContent], { type: 'text/plain;charset=utf-8' });
+      element.href = URL.createObjectURL(file);
+      element.download = `${data.slug || 'sample'}-negaresh-yar.txt`;
+      document.body.appendChild(element);
+      element.click();
+      document.body.removeChild(element);
+      setDownloaded(true);
+      setTimeout(() => setDownloaded(false), 3000);
+    }
+  };
+
+  const handleDownloadWord = () => {
+    if (typeof window !== 'undefined' && data.slug) {
+      const downloadUrl = `/api/samples/download?slug=${encodeURIComponent(data.slug)}&format=doc`;
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.setAttribute('download', `${data.slug}-negaresh-yar.doc`);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setDownloadedWord(true);
+      setTimeout(() => setDownloadedWord(false), 3000);
+    }
+  };
+
+  const handleDownloadPdf = () => {
+    if (typeof window !== 'undefined') {
+      const docTitle = data.title || data.h1Title || 'سند رسمی';
+      const printWindow = window.open('', '_blank');
+      if (printWindow) {
+        printWindow.document.write(`
+          <!DOCTYPE html>
+          <html lang="fa" dir="rtl">
+            <head>
+              <meta charset="utf-8">
+              <title>${docTitle} - نگارش یار</title>
+              <style>
+                @page { size: A4; margin: 20mm; }
+                body {
+                  font-family: 'B Nazanin', 'IRANSans', 'Tahoma', sans-serif;
+                  direction: rtl;
+                  padding: 24px;
+                  color: #0f172a;
+                  line-height: 2;
+                  text-align: justify;
+                }
+                .header {
+                  border-bottom: 2px solid #0f172a;
+                  padding-bottom: 12px;
+                  margin-bottom: 24px;
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 11pt;
+                }
+                .besm { text-align: center; font-weight: bold; font-size: 15pt; margin-bottom: 20px; }
+                .title { text-align: center; font-weight: bold; font-size: 16pt; margin-bottom: 25px; color: #0f172a; }
+                .content { white-space: pre-wrap; font-size: 13.5pt; margin-bottom: 40px; }
+                .sign { text-align: left; margin-top: 50px; font-weight: bold; padding-left: 50px; font-size: 13pt; }
+                .footer { text-align: center; font-size: 10pt; color: #64748b; border-top: 1px dashed #cbd5e1; padding-top: 14px; margin-top: 40px; }
+              </style>
+            </head>
+            <body>
+              <div class="besm">« به نام خدا »</div>
+              <div class="header">
+                <div>سامانه رسمی نگارش یار (negaresh-yar.ir)</div>
+                <div>سند اداری و قضایی استاندارد</div>
+                <div>تاریخ: ${new Intl.DateTimeFormat('fa-IR').format(new Date())}</div>
+              </div>
+              <div class="title">${docTitle}</div>
+              <div class="content">${sampleContent.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</div>
+              <div class="sign">امضاء و اثر انگشت: ................................</div>
+              <div class="footer">استخراج شده از بانک اسناد رسمی نگارش یار - negaresh-yar.ir</div>
+              <script>
+                window.onload = function() { window.print(); }
+              </script>
+            </body>
+          </html>
+        `);
+        printWindow.document.close();
+      } else {
+        window.print();
+      }
+      setDownloadedPdf(true);
+      setTimeout(() => setDownloadedPdf(false), 3000);
+    }
+  };
+
+  const formattedDate = data.updatedAt
+    ? new Date(data.updatedAt).toLocaleDateString('fa-IR', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      })
+    : 'مرداد ۱۴۰۵';
+
+  const categoryName =
+    data.category && data.category !== 'undefined'
+      ? data.category
+      : data.categoryName && data.categoryName !== 'undefined'
+      ? data.categoryName
+      : 'درخواست‌های قضایی';
+  const title = (data.title && data.title !== 'undefined') ? data.title : (data.h1Title && data.h1Title !== 'undefined') ? data.h1Title : 'نمونه سند حقوقی';
+  const shortDescription = (data.shortDescription && data.shortDescription !== 'undefined') ? data.shortDescription : (data.heroSubtitle && data.heroSubtitle !== 'undefined') ? data.heroSubtitle : '';
+  const excerpt =
+    data.excerpt ||
+    (data.whatIsParagraphs && data.whatIsParagraphs.length > 0
+      ? data.whatIsParagraphs[0]
+      : shortDescription);
+
+  const whenToUseItems =
+    data.whenToUse ||
+    (data.whenToUseList
+      ? data.whenToUseList.map((w) => ({ title: w.title, desc: w.desc }))
+      : []);
+
+  const documentItems =
+    data.documents ||
+    (data.requiredInfoList
+      ? data.requiredInfoList.map((r) => ({ title: r.title, desc: r.desc }))
+      : data.guideSteps
+      ? data.guideSteps.map((g) => ({ title: `گام ${g.stepNumber}: ${g.title}`, desc: g.desc }))
+      : []);
+
+  const importantNotesList =
+    data.importantNotes ||
+    data.legalNotesList ||
+    [
+      'پیش از ثبت در سامانه ثنا یا تحویل به مرجع قضایی، مشخصات و تاریخ‌ها را مجدداً بررسی نمایید.',
+      'پیوست کردن اصل یا برابر اصل مدارک در دفاتر خدمات الکترونیک قضایی الزامی است.',
+    ];
+
+  const commonMistakesList =
+    data.commonMistakes ||
+    data.commonMistakesList ||
+    [
+      {
+        mistake: 'عدم درج دقیق شماره پرونده یا ابلاغیه',
+        impact: 'تأخیر در ثبت و بایگانی لوایح در شعبه.',
+        solution: 'شماره ۱۶ رقمی پرونده و شماره بایگانی را در بالای برگه قید کنید.',
+      },
+    ];
+
+  const legalBasisList =
+    data.legalBasis && data.legalBasis.length > 0
+      ? data.legalBasis
+      : data.legalArticles && data.legalArticles.length > 0
+      ? data.legalArticles.map((la) => ({
+          article: la.articleName,
+          title: 'مستند قانونی',
+          description: la.description,
+        }))
+      : [
+          {
+            article: 'قوانین و مقررات عمومی آیین دادرسی',
+            title: 'رعایت مهلت‌ها و اختیارات قانونی',
+            description: 'انطباق متن با مواد قانون آیین دادرسی و فرمت‌های استاندارد قوه قضاییه.',
+          },
+        ];
+
+  const faqsList =
+    data.faq && data.faq.length > 0
+      ? data.faq
+      : data.faqs
+      ? data.faqs.map((f) => ({ question: f.q, answer: f.a }))
+      : [];
+
+  const authorName = data.author?.name || 'تیم حقوقی نگارش یار';
+  const authorRole = data.author?.role || 'متخصص تنظیم اوراق قضایی و اداری';
+  const reviewerName = data.reviewer?.name || 'بررسی و نظارت حقوقی نگارش یار';
+  const orderHref = data.ctaPrimaryHref || '/request?service=administrative-letter';
+  const customMessengerMessage =
+    data.messengerMessage ||
+    `سلام وقت بخیر. برای تنظیم اختصاصی و فوری ${title} متناسب با پرونده‌ام راهنمایی می‌خواستم. مدارک آماده است.`;
+  const messengers = generateMessengerLinks(customMessengerMessage);
+
+  return (
+    <div className="space-y-12 sm:space-y-16 py-6 sm:py-10 selection:bg-[#E5C158] selection:text-[#070B15]">
+      {/* ---------------------------------------------------- */}
+      {/* 1. HERO SECTION, BREADCRUMB, H1 & AUTHOR META */}
+      {/* ---------------------------------------------------- */}
+      <section className="relative overflow-hidden pt-6 pb-10 md:pt-12 md:pb-16 border-b border-slate-800/80 bg-gradient-to-b from-[#0C1222] via-[#070B15] to-[#070B15] rounded-3xl">
+        {/* Ambient Radial Spotlight */}
+        <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[750px] h-[380px] bg-[radial-gradient(circle_at_center,rgba(229,193,88,0.18)_0%,transparent_70%)] pointer-events-none blur-3xl" />
+
+        <Container className="relative z-10 text-center">
+          {/* Breadcrumb Navigation */}
+          <nav aria-label="Breadcrumb" className="mb-6 inline-block">
+            <ol className="flex items-center justify-center gap-2 text-xs text-slate-400 font-medium flex-wrap">
+              <li>
+                <Link href="/" className="hover:text-[#E5C158] transition-colors">
+                  صفحه اصلی
+                </Link>
+              </li>
+              <li className="text-slate-600">/</li>
+              <li>
+                <Link href="/samples" className="hover:text-[#E5C158] transition-colors">
+                  بانک نمونه اسناد
+                </Link>
+              </li>
+              <li className="text-slate-600">/</li>
+              <li className="text-[#E5C158] font-semibold">{categoryName}</li>
+            </ol>
+          </nav>
+
+          {/* Category Badge & Meta */}
+          <div className="flex flex-wrap items-center justify-center gap-2.5 mb-5">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#E5C158]/10 border border-[#E5C158]/30 text-[#E5C158] text-xs font-bold">
+              <Layers className="w-3.5 h-3.5" />
+              <span>{categoryName}</span>
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/70 text-slate-300 text-xs">
+              <Calendar className="w-3.5 h-3.5 text-slate-400" />
+              <span>به‌روزرسانی: {formattedDate}</span>
+            </span>
+          </div>
+
+          {/* H1 Title */}
+          <motion.h1
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight md:leading-tight max-w-4xl mx-auto tracking-tight mb-5"
+          >
+            {title}
+          </motion.h1>
+
+          {/* Subtitle / Short Description */}
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="text-slate-300 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed font-normal mb-6"
+          >
+            {shortDescription}
+          </motion.p>
+
+          {/* Author / Reviewer Attribution Bar */}
+          <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-400 pt-2 border-t border-slate-800/60 max-w-2xl mx-auto">
+            <div className="flex items-center gap-1.5">
+              <PenTool className="w-3.5 h-3.5 text-[#E5C158]" />
+              <span>تدوین: <strong className="text-slate-200">{authorName}</strong> ({authorRole})</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <UserCheck className="w-3.5 h-3.5 text-emerald-400" />
+              <span>نظارت حقوقی: <strong className="text-slate-200">{reviewerName}</strong></span>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <Container className="space-y-12 sm:space-y-16">
+        {/* ---------------------------------------------------- */}
+        {/* 2. DIRECT INTENT ANSWER BOX (پاسخ مستقیم به Intent کاربر) */}
+        {/* ---------------------------------------------------- */}
+        <section
+          id="direct-intent-answer"
+          className="p-5 sm:p-7 rounded-2xl bg-gradient-to-r from-blue-950/30 via-slate-900/80 to-blue-950/30 border border-blue-500/30 text-slate-200"
+        >
+          <div className="flex items-start gap-3.5">
+            <div className="p-2.5 rounded-xl bg-blue-500/10 text-blue-400 shrink-0 mt-0.5">
+              <Sparkles className="w-5 h-5" />
+            </div>
+            <div className="space-y-2">
+              <h2 className="text-base sm:text-lg font-bold text-white flex items-center gap-2">
+                <span>پاسخ مستقیم و خلاصه کاربردی این درخواست</span>
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                {excerpt}
+              </p>
+              {data.audience && (
+                <div className="pt-2 text-xs text-blue-300 flex items-center gap-2">
+                  <span className="font-semibold text-slate-400">مناسب برای:</span>
+                  <span>{data.audience}</span>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+
+        {/* ---------------------------------------------------- */}
+        {/* CTA 1: SLIM 2-LINE ADVISORY (کادر هشدار پررنگ، شفاف و چشم‌گیر) */}
+        {/* ---------------------------------------------------- */}
+        <aside
+          id="pre-sample-slim-cta"
+          aria-label="هشدار انطباق پرونده با نمونه"
+          className="p-4 sm:p-5 rounded-2xl bg-amber-100 border-2 border-amber-500 border-r-8 border-r-amber-600 shadow-md text-slate-950 flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all hover:shadow-lg my-3"
+        >
+          <div className="flex items-start sm:items-center gap-3">
+            <div className="p-2 sm:p-2.5 rounded-xl bg-amber-500 text-slate-950 shrink-0 shadow-sm mt-0.5 sm:mt-0 flex items-center justify-center">
+              <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6 stroke-[2.5]" />
+            </div>
+            <p className="text-xs sm:text-sm leading-relaxed text-slate-950">
+              <span className="inline-block px-2.5 py-0.5 rounded-md bg-amber-500 text-slate-950 font-black text-xs sm:text-sm ml-1.5 shadow-xs">
+                توجه اداری / حقوقی:
+              </span>
+              <strong className="font-bold text-slate-950">
+                این متن یک الگوی عمومی است؛ در صورت تفاوت در مبالغ یا اسناد، ارسال متن خام ممکن است توسط قاضی یا اداره رد شود.
+              </strong>
+            </p>
+          </div>
+          <Link
+            href={orderHref}
+            className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-950 hover:bg-black text-[#E5C158] hover:text-white font-black text-xs sm:text-sm shadow-md hover:shadow-xl transition-all shrink-0 whitespace-nowrap group"
+          >
+            <span>سفارش تنظیم متن اختصاصی پرونده شما</span>
+            <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+          </Link>
+        </aside>
+
+        {/* ---------------------------------------------------- */}
+        {/* 4. FULL SAMPLE DOCUMENT TEXT & COPY BUTTON */}
+        {/* ---------------------------------------------------- */}
+        <section id="sample-template" className="scroll-mt-24 space-y-5">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-amber-500/15 border border-amber-500/40 text-amber-950 text-xs font-black mb-2">
+                <BookOpen className="w-3.5 h-3.5 text-amber-700" />
+                <span>متن کامل و آماده نمونه سند</span>
+              </div>
+              <h2 className="text-xl sm:text-2xl font-black text-slate-950">
+                {data.sampleStructureTitle || `نمونه متن کامل ${title}`}
+              </h2>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-2 shrink-0">
+              {/* Word DOC Download Button */}
+              <button
+                onClick={handleDownloadWord}
+                className="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-blue-700 hover:bg-blue-600 border border-blue-500 text-xs sm:text-sm text-white font-black transition-all shadow-sm hover:shadow-md"
+                aria-label="دانلود مستقیم فایل ورد Word قابل ویرایش با فرمت DOC"
+                title="دانلود فایل Word با فرمت رسمی مایکروسافت ورد DOC و سربرگ اداری"
+              >
+                {downloadedWord ? (
+                  <>
+                    <Check className="w-4 h-4 text-emerald-300" />
+                    <span className="text-emerald-200">فایل Word دانلود شد!</span>
+                  </>
+                ) : (
+                  <>
+                    <FileText className="w-4 h-4 text-blue-200" />
+                    <span>دانلود فایل Word (DOC)</span>
+                  </>
+                )}
+              </button>
+
+              {/* PDF Print Download Button */}
+              <button
+                onClick={handleDownloadPdf}
+                className="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-rose-700 hover:bg-rose-600 border border-rose-500 text-xs sm:text-sm text-white font-black transition-all shadow-sm hover:shadow-md"
+                aria-label="چاپ مستقیم یا ذخیره به عنوان فایل PDF"
+                title="چاپ یا ذخیره به صورت PDF با سربرگ استاندارد اداری"
+              >
+                {downloadedPdf ? (
+                  <>
+                    <Check className="w-4 h-4 text-emerald-300" />
+                    <span className="text-emerald-200">در حال آماده‌سازی پرینت...</span>
+                  </>
+                ) : (
+                  <>
+                    <Printer className="w-4 h-4 text-rose-200" />
+                    <span>چاپ و ذخیره PDF</span>
+                  </>
+                )}
+              </button>
+
+              {/* Copy Text Button */}
+              <button
+                onClick={handleCopyText}
+                className="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-xs sm:text-sm text-white font-bold transition-colors shadow-sm"
+                aria-label="کپی رایگان متن کامل نمونه به حافظه"
+              >
+                {copied ? (
+                  <>
+                    <Check className="w-4 h-4 text-emerald-400" />
+                    <span className="text-emerald-400 font-bold">متن کپی شد!</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="w-4 h-4 text-[#E5C158]" />
+                    <span>کپی متن</span>
+                  </>
+                )}
+              </button>
+
+              {/* Download TXT Button */}
+              <button
+                onClick={handleDownloadTxt}
+                className="inline-flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-300 text-xs sm:text-sm text-slate-800 font-medium transition-colors shadow-sm"
+                aria-label="دانلود فایل متنی نمونه"
+              >
+                {downloaded ? (
+                  <>
+                    <Check className="w-4 h-4 text-emerald-600" />
+                    <span className="text-emerald-700 font-bold">فایل TXT ذخیره شد!</span>
+                  </>
+                ) : (
+                  <>
+                    <Download className="w-4 h-4 text-slate-600" />
+                    <span>TXT</span>
+                  </>
+                )}
+              </button>
+
+              {/* Google Preferred Source CTA */}
+              <PreferredSourceCTA variant="sample" />
+            </div>
+          </div>
+
+          {/* Download & File Info Bar for SEO & UX */}
+          <div className="flex flex-wrap items-center justify-between gap-3 p-3.5 rounded-xl bg-blue-50/80 border border-blue-200 text-xs text-blue-950 font-medium">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse" />
+              <span>
+                <strong>فرمت‌های رایگان آماده:</strong> فایل Word قابل ویرایش (.doc) | نسخه PDF رسمی با چاپ مرورگر | فایل متنی خام (.txt)
+              </span>
+            </div>
+            <div className="flex items-center gap-3 text-[11px] text-blue-800">
+              <span>اندازه فایل: ~۱۵ کیلوبایت</span>
+              <span>•</span>
+              <span>سازگار با کامپیوتر و گوشی</span>
+            </div>
+          </div>
+
+          <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
+            {data.sampleStructureIntro ||
+              'شما می‌توانید از قالب متنی زیر برای تنظیم و ثبت در سامانه ثنا یا ارائه به شعبه مربوطه استفاده کنید. جاهای خالی (نقطه‌چین‌ها) را با اطلاعات واقعی پرونده خود تکمیل نمایید:'}
+          </p>
+
+          {/* Sample Document Box */}
+          <div className="relative rounded-2xl bg-slate-950 border border-slate-800 p-5 sm:p-8 text-xs sm:text-sm text-slate-200 leading-loose overflow-x-auto whitespace-pre-wrap selection:bg-[#E5C158] selection:text-[#070B15] shadow-inner font-sans">
+            <div className="absolute top-3 left-3 flex items-center gap-1.5 opacity-60 pointer-events-none">
+              <span className="w-2.5 h-2.5 rounded-full bg-rose-500" />
+              <span className="w-2.5 h-2.5 rounded-full bg-amber-500" />
+              <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
+            </div>
+            <div className="pt-3 border-t border-slate-800/60">
+              {sampleContent}
+            </div>
+          </div>
+
+          {/* Features checklist below template */}
+          {data.sampleStructureFeatures && data.sampleStructureFeatures.length > 0 && (
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+              {data.sampleStructureFeatures.map((ft, idx) => (
+                <div
+                  key={idx}
+                  className="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 text-xs text-slate-300 flex items-center gap-2"
+                >
+                  <CheckCircle2 className="w-4 h-4 text-[#E5C158] shrink-0" />
+                  <span>{ft}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </section>
+
+
+        {/* ---------------------------------------------------- */}
+        {/* 5. ANALYSIS & LEGAL EXPLANATION */}
+        {/* ---------------------------------------------------- */}
+        {(data.whatIsParagraphs || data.whatIsHighlights) && (
+          <section className="scroll-mt-24">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              <div className="lg:col-span-7 space-y-5">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#E5C158]/10 text-[#E5C158] text-xs font-semibold">
+                  <FileText className="w-3.5 h-3.5" />
+                  <span>تحلیل و مبانی کاربردی</span>
+                </div>
+                <h2 className="text-xl sm:text-2xl font-bold text-white leading-snug">
+                  {data.whatIsTitle || `توضیح و تحلیل حقوقی ${title}`}
+                </h2>
+                <div className="space-y-3.5 text-slate-300 text-xs sm:text-sm leading-relaxed">
+                  {data.whatIsParagraphs &&
+                    data.whatIsParagraphs.map((paragraph, idx) => (
+                      <p key={idx}>{paragraph}</p>
+                    ))}
+                </div>
+              </div>
+
+              {data.whatIsHighlights && (
+                <div className="lg:col-span-5 grid grid-cols-1 gap-3.5">
+                  {data.whatIsHighlights.map((item, idx) => {
+                    const itemTitle = typeof item === 'string' ? item : item.title;
+                    const itemDesc = typeof item === 'string' ? undefined : item.desc;
+                    return (
+                      <div
+                        key={idx}
+                        className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-[#E5C158]/40 transition-all"
+                      >
+                        <div className="flex items-start gap-3">
+                          <div className="p-2 rounded-lg bg-[#E5C158]/10 text-[#E5C158] shrink-0 mt-0.5">
+                            <ShieldCheck className="w-4 h-4" />
+                          </div>
+                          <div>
+                            <h3 className="text-sm font-bold text-white mb-1">{itemTitle}</h3>
+                            {itemDesc && <p className="text-xs text-slate-400 leading-relaxed">{itemDesc}</p>}
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          </section>
+        )}
+
+        {/* ---------------------------------------------------- */}
+        {/* 6. WHEN TO USE (چه زمانی از این متن استفاده کنیم؟) */}
+        {/* ---------------------------------------------------- */}
+        {whenToUseItems.length > 0 && (
+          <section className="p-6 sm:p-8 rounded-3xl bg-slate-900/50 border border-slate-800 relative overflow-hidden">
+            <div className="max-w-3xl mb-8">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 text-blue-400 text-xs font-semibold mb-2">
+                <Clock className="w-3.5 h-3.5" />
+                <span>کاربردها و موقعیت‌ها</span>
+              </div>
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
+                {data.whenToUseTitle || `چه زمانی از ${title} استفاده کنیم؟`}
+              </h2>
+              <p className="text-slate-400 text-xs sm:text-sm">
+                {data.whenToUseSubtitle || 'موقعیت‌های حقوقی و اداری که نیاز به این سند دارند:'}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {whenToUseItems.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="p-4 sm:p-5 rounded-2xl bg-slate-950/70 border border-slate-800/80 hover:border-slate-700 transition-all"
+                >
+                  <div className="flex items-center gap-2.5 mb-2 text-[#E5C158]">
+                    <CheckCircle2 className="w-4 h-4 shrink-0" />
+                    <h3 className="text-sm sm:text-base font-bold text-white">{item.title}</h3>
+                  </div>
+                  <p className="text-xs text-slate-400 leading-relaxed pr-6">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* ---------------------------------------------------- */}
+        {/* 7. REQUIRED DOCUMENTS & INFORMATION (مدارک موردنیاز) */}
+        {/* ---------------------------------------------------- */}
+        {documentItems.length > 0 && (
+          <section>
+            <div className="text-center max-w-3xl mx-auto mb-8">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-semibold mb-2">
+                <FileCheck className="w-3.5 h-3.5" />
+                <span>چک‌لیست مدارک</span>
+              </div>
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
+                {data.requiredInfoTitle || 'مدارک و اطلاعات ضروری'}
+              </h2>
+              <p className="text-slate-400 text-xs sm:text-sm">
+                {data.requiredInfoSubtitle || 'قبل از ثبت یا مراجعه حضوری، این مدارک را آماده داشته باشید:'}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {documentItems.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="p-4 sm:p-5 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-emerald-500/30 transition-all"
+                >
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="w-6 h-6 rounded-full bg-emerald-500/10 text-emerald-400 font-bold text-xs flex items-center justify-center shrink-0">
+                      {idx + 1}
+                    </span>
+                    <h3 className="text-sm font-bold text-white">{item.title}</h3>
+                  </div>
+                  <p className="text-xs text-slate-400 leading-relaxed pr-9">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* ---------------------------------------------------- */}
+        {/* 8. IMPORTANT LEGAL NOTES (نکات مهم حقوقی) */}
+        {/* ---------------------------------------------------- */}
+        {importantNotesList.length > 0 && (
+          <section className="p-5 sm:p-7 rounded-2xl bg-amber-500/5 border border-amber-500/20 text-amber-200">
+            <div className="flex items-center gap-2.5 mb-3">
+              <ShieldAlert className="w-5 h-5 text-amber-400 shrink-0" />
+              <h2 className="text-base sm:text-lg font-bold text-amber-300">
+                {data.legalNotesTitle || 'نکات مهم حقوقی و نگارشی'}
+              </h2>
+            </div>
+            <ul className="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed list-disc list-inside">
+              {importantNotesList.map((note, idx) => (
+                <li key={idx} className="marker:text-amber-400">
+                  {note}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {/* ---------------------------------------------------- */}
+        {/* 9. COMMON MISTAKES & RISKS (اشتباهات رایج) */}
+        {/* ---------------------------------------------------- */}
+        {commonMistakesList.length > 0 && (
+          <section>
+            <div className="text-center max-w-3xl mx-auto mb-8">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-500/10 text-rose-400 text-xs font-semibold mb-2">
+                <AlertTriangle className="w-3.5 h-3.5" />
+                <span>اشتباهات رایج</span>
+              </div>
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
+                {data.commonMistakesTitle || 'اشتباهات رایج و خسارت‌بار'}
+              </h2>
+              <p className="text-slate-400 text-xs sm:text-sm">
+                {data.commonMistakesSubtitle || 'پرهیز از این خطاها از رد درخواست شما جلوگیری می‌کند:'}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              {commonMistakesList.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="p-5 rounded-2xl bg-slate-900/60 border border-rose-900/30 hover:border-rose-500/40 transition-all flex flex-col justify-between"
+                >
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-rose-400 font-bold text-xs sm:text-sm">
+                      <ShieldAlert className="w-4 h-4 shrink-0" />
+                      <h3>{item.mistake}</h3>
+                    </div>
+                    <div className="p-2.5 rounded-xl bg-rose-950/40 border border-rose-900/20 text-xs text-rose-300 leading-relaxed">
+                      <span className="font-bold block mb-0.5">اثر / پیامد:</span>
+                      {item.impact || item.consequence}
+                    </div>
+                  </div>
+                  <div className="mt-3 pt-3 border-t border-slate-800 text-xs text-emerald-400 leading-relaxed">
+                    <span className="font-bold block text-slate-300 mb-0.5">راه‌حل صحیح:</span>
+                    {item.solution}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* ---------------------------------------------------- */}
+        {/* 10. LEGAL BASIS & ARTICLES (مبانی و مستندات قانونی) */}
+        {/* ---------------------------------------------------- */}
+        {legalBasisList.length > 0 && (
+          <section className="p-6 sm:p-8 rounded-3xl bg-slate-900/70 border border-slate-800">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-2 rounded-lg bg-indigo-500/10 text-indigo-400">
+                <Scale className="w-5 h-5" />
+              </div>
+              <div>
+                <h2 className="text-xl sm:text-2xl font-bold text-white">
+                  مبانی و مستندات قانونی مرتبط
+                </h2>
+                <p className="text-xs text-slate-400 mt-0.5">
+                  استناد به مواد قانونی مصوب و آیین‌نامه‌های رسمی
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {legalBasisList.map((lb, idx) => (
+                <div
+                  key={idx}
+                  className="p-4 rounded-xl bg-slate-950/80 border border-slate-800/80 text-xs sm:text-sm text-slate-300"
+                >
+                  <div className="flex items-center gap-2 font-bold text-indigo-300 mb-1.5">
+                    <Scale className="w-4 h-4 text-indigo-400 shrink-0" />
+                    <span>{lb.article} - {lb.title}</span>
+                  </div>
+                  <p className="text-slate-400 text-xs leading-relaxed pr-6">{lb.description}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* ---------------------------------------------------- */}
+        {/* 11. FREQUENTLY ASKED QUESTIONS (FAQ) */}
+        {/* ---------------------------------------------------- */}
+        {faqsList.length > 0 && (
+          <section className="scroll-mt-24 space-y-6">
+            <div className="text-center max-w-3xl mx-auto">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 text-blue-400 text-xs font-semibold mb-2">
+                <HelpCircle className="w-3.5 h-3.5" />
+                <span>پرسش‌های متداول</span>
+              </div>
+              <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
+                {data.faqTitle || `سوالات متداول درباره ${title}`}
+              </h2>
+              <p className="text-slate-400 text-xs sm:text-sm">
+                پاسخ به سوالات پرتکرار مراجعین و متقاضیان این سند
+              </p>
+            </div>
+
+            <div className="space-y-3 max-w-4xl mx-auto">
+              {faqsList.map((faqItem, idx) => {
+                const isOpen = openFaq === idx;
+                return (
+                  <div
+                    key={idx}
+                    className="rounded-2xl border border-slate-800/90 bg-slate-900/40 overflow-hidden transition-colors"
+                  >
+                    <button
+                      onClick={() => toggleFaq(idx)}
+                      className="w-full text-right p-4 sm:p-5 flex items-center justify-between gap-4 hover:bg-slate-800/30 transition-colors"
+                      aria-expanded={isOpen}
+                    >
+                      <span className="font-bold text-xs sm:text-sm text-white leading-snug">
+                        {idx + 1}. {faqItem.question}
+                      </span>
+                      <ChevronDown
+                        className={`w-4 h-4 text-[#E5C158] shrink-0 transition-transform duration-300 ${
+                          isOpen ? 'rotate-180' : ''
+                        }`}
+                      />
+                    </button>
+
+                    <AnimatePresence>
+                      {isOpen && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: 'auto', opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.2 }}
+                        >
+                          <div className="px-4 pb-4 sm:px-5 sm:pb-5 text-xs text-slate-300 leading-relaxed border-t border-slate-800/50 pt-3">
+                            {faqItem.answer}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+        )}
+
+        {/* ---------------------------------------------------- */}
+        {/* 12. INTERNAL LINKING: RELATED SAMPLES, ARTICLES & SERVICES */}
+        {/* ---------------------------------------------------- */}
+        {((data.relatedServices && data.relatedServices.length > 0) ||
+          (data.relatedSamples && data.relatedSamples.length > 0) ||
+          (data.relatedArticles && data.relatedArticles.length > 0)) && (
+          <section className="space-y-6 pt-6 border-t border-slate-800/80">
+            <div className={`grid grid-cols-1 ${data.relatedArticles && data.relatedArticles.length > 0 ? 'lg:grid-cols-3' : 'md:grid-cols-2'} gap-6`}>
+              {/* Related Services */}
+              {data.relatedServices && data.relatedServices.length > 0 && (
+                <div className="space-y-3">
+                  <h3 className="text-base font-bold text-white flex items-center gap-2">
+                    <Sparkles className="w-4 h-4 text-[#E5C158]" />
+                    <span>خدمات تخصصی نگارش یار</span>
+                  </h3>
+                  <div className="space-y-2.5">
+                    {data.relatedServices.map((srv, idx) => (
+                      <Link
+                        key={idx}
+                        href={srv.href}
+                        className="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-[#E5C158]/40 transition-all flex items-center justify-between group block"
+                      >
+                        <div>
+                          <div className="flex items-center gap-2 mb-0.5">
+                            <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-[#E5C158]/10 text-[#E5C158]">
+                              {srv.badge}
+                            </span>
+                            <h4 className="text-xs sm:text-sm font-bold text-white group-hover:text-[#E5C158] transition-colors">
+                              {srv.title}
+                            </h4>
+                          </div>
+                          <p className="text-xs text-slate-400">{srv.desc}</p>
+                        </div>
+                        <ChevronLeft className="w-4 h-4 text-slate-500 group-hover:text-[#E5C158] transition-transform group-hover:-translate-x-1 shrink-0" />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Related Samples */}
+              {data.relatedSamples && data.relatedSamples.length > 0 && (
+                <div className="space-y-3">
+                  <h3 className="text-base font-bold text-white flex items-center gap-2">
+                    <BookOpen className="w-4 h-4 text-blue-400" />
+                    <span>نمونه اسناد و لوایح مرتبط</span>
+                  </h3>
+                  <div className="space-y-2.5">
+                    {data.relatedSamples.map((smp, idx) => {
+                      const href =
+                        typeof smp === 'string'
+                          ? `/samples/${smp}`
+                          : smp.href;
+                      const smpTitle =
+                        typeof smp === 'string'
+                          ? `مشاهده نمونه ${smp}`
+                          : smp.title && smp.title !== 'undefined'
+                          ? smp.title
+                          : 'مشاهده متن و الگوی سند';
+                      const smpBadge =
+                        typeof smp === 'object' && smp.badge && smp.badge !== 'undefined'
+                          ? smp.badge
+                          : 'الگوی آماده';
+                      const smpDesc =
+                        typeof smp === 'object' && smp.desc && smp.desc !== 'undefined'
+                          ? smp.desc
+                          : 'مشاهده و دانلود قالب استاندارد';
+
+                      return (
+                        <Link
+                          key={idx}
+                          href={href}
+                          className="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/40 transition-all flex items-center justify-between group block"
+                        >
+                          <div>
+                            <div className="flex items-center gap-2 mb-0.5">
+                              <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-blue-500/10 text-blue-400">
+                                {smpBadge}
+                              </span>
+                              <h4 className="text-xs sm:text-sm font-bold text-white group-hover:text-blue-400 transition-colors">
+                                {smpTitle}
+                              </h4>
+                            </div>
+                            <p className="text-xs text-slate-400">{smpDesc}</p>
+                          </div>
+                          <ChevronLeft className="w-4 h-4 text-slate-500 group-hover:text-blue-400 transition-transform group-hover:-translate-x-1 shrink-0" />
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {/* Related Knowledge Articles */}
+              {data.relatedArticles && data.relatedArticles.length > 0 && (
+                <div className="space-y-3">
+                  <h3 className="text-base font-bold text-white flex items-center gap-2">
+                    <FileText className="w-4 h-4 text-emerald-400" />
+                    <span>راهنماها و مقالات حقوقی</span>
+                  </h3>
+                  <div className="space-y-2.5">
+                    {data.relatedArticles.map((art, idx) => (
+                      <Link
+                        key={idx}
+                        href={art.href}
+                        className="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-emerald-500/40 transition-all flex items-center justify-between group block"
+                      >
+                        <div>
+                          <div className="flex items-center gap-2 mb-0.5">
+                            <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400">
+                              {art.badge || 'مقاله آموزشی'}
+                            </span>
+                            <h4 className="text-xs sm:text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">
+                              {art.title}
+                            </h4>
+                          </div>
+                          <p className="text-xs text-slate-400">{art.desc}</p>
+                        </div>
+                        <ChevronLeft className="w-4 h-4 text-slate-500 group-hover:text-emerald-400 transition-transform group-hover:-translate-x-1 shrink-0" />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </section>
+        )}
+
+        {/* ---------------------------------------------------- */}
+        {/* CTA 2: MASTER POST-SAMPLE CONVERSION SECTION (جامع، مستدل و تبدیل‌کننده) */}
+        {/* ---------------------------------------------------- */}
+        <section
+          id="master-conversion-section"
+          aria-labelledby="master-cta-heading"
+          className="rounded-3xl bg-gradient-to-b from-[#0F172A] via-[#0A101D] to-[#070B15] border-2 border-[#E5C158]/45 p-6 sm:p-9 lg:p-12 relative overflow-hidden shadow-2xl space-y-8"
+        >
+          {/* Ambient background glow */}
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-[radial-gradient(circle_at_center,rgba(229,193,88,0.08)_0%,transparent_70%)] pointer-events-none blur-3xl" />
+
+          {/* Header & The Core Problem */}
+          <div className="max-w-3xl mx-auto text-center space-y-3">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-300 text-xs font-bold">
+              <ShieldAlert className="w-3.5 h-3.5 text-rose-400" />
+              <span>چرا استفاده از نمونه آماده اینترنتی ریسک رد شدن دارد؟</span>
+            </span>
+            <h2 id="master-cta-heading" className="text-xl sm:text-2xl md:text-3xl font-black text-white leading-snug">
+              تنظیم اختصاصی، مستدل و دقیق {title} متناسب با پرونده شما
+            </h2>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-2xl mx-auto">
+              قضات دادگاه و مسئولان اداری روزانه ده‌ها نمونه کپی‌شده اینترنتی را بررسی می‌کنند. متنی که مستند به مواد قانونی دقیق، شماره کلاسه، گردش‌کار و تاریخ‌های پرونده شما نباشد، با صدور اخطار رفع نقص یا رد قطعی مواجه شده و فرصت‌ها و مهلت‌های قانونی تکرارناپذیر شما را می‌سوزاند.
+            </p>
+          </div>
+
+          {/* 2-Column High-Contrast Comparison (تقابل هوشمند) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6 items-stretch">
+            {/* Box 1: The Generic Risk */}
+            <div className="p-5 sm:p-6 rounded-2xl bg-slate-950/80 border border-rose-900/30 space-y-3 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center gap-2 text-rose-400 font-bold text-sm sm:text-base mb-3 pb-2 border-b border-slate-800/80">
+                  <ShieldAlert className="w-5 h-5 shrink-0" />
+                  <h3>خطرات ارسال نمونه خام اینترنتی</h3>
+                </div>
+                <ul className="space-y-2.5 text-xs sm:text-sm text-slate-300">
+                  <li className="flex items-start gap-2">
+                    <span className="text-rose-400 font-bold">✕</span>
+                    <span>کلی‌گویی و عدم انطباق با واقعیت‌ها، ادله و مدارک خاص پرونده شما</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-rose-400 font-bold">✕</span>
+                    <span>فقدان استناد دقیق به مواد قانون، آرای وحدت رویه و بخشنامه‌های جاری</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-rose-400 font-bold">✕</span>
+                    <span>خطر صدور قرار رد، اخطار رفع نقص و از دست رفتن مهلت‌های قانونی اعتراض</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-rose-400 font-bold">✕</span>
+                    <span>شناخته‌شده بودن متن‌های تکراری برای مدیران و قضات باسابقه</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="pt-2 text-[11px] text-slate-500 text-center border-t border-slate-900">
+                مناسب فقط برای آشنایی اولیه با ساختار، نه ارائه به عنوان سند سرنوشت‌ساز
+              </div>
+            </div>
+
+            {/* Box 2: The Custom Solution by Negaresh Yar */}
+            <div className="p-5 sm:p-6 rounded-2xl bg-gradient-to-b from-[#16233B] to-[#0D1525] border-2 border-[#E5C158]/60 space-y-3 flex flex-col justify-between shadow-lg shadow-[#E5C158]/5 relative">
+              <span className="absolute -top-3 left-6 px-3 py-0.5 rounded-full bg-[#E5C158] text-[#070B15] text-[11px] font-black shadow-xs">
+                خدمت تخصصی نگارش یار
+              </span>
+              <div>
+                <div className="flex items-center gap-2 text-[#E5C158] font-bold text-sm sm:text-base mb-3 pb-2 border-b border-slate-800/80">
+                  <Sparkles className="w-5 h-5 shrink-0" />
+                  <h3>مزایای تنظیم اختصاصی توسط متخصصان ما</h3>
+                </div>
+                <ul className="space-y-2.5 text-xs sm:text-sm text-slate-200">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                    <span>بررسی شرح وقایع و تدوین استدلال محکم منطبق بر معاذیر قانونی شما</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                    <span>استناد مستقیم به مواد قانونی مصوب، آیین دادرسی و بخشنامه‌های اداری</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                    <span>آماده‌سازی با فرمت استاندارد ثبت در سامانه ثنا یا الگوی رسمی دبیرخانه‌ها</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                    <span>پشتیبانی، پاسخگویی و اعمال ویرایش تکمیلی تا زمان تایید نهایی شما</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="pt-2 text-[11px] text-[#E5C158] text-center border-t border-slate-800/60 font-medium">
+                تحویل سریع در فرمت‌های Word و PDF در پیام‌رسان یا سامانه
+              </div>
+            </div>
+          </div>
+
+          {/* Fast Conversion Actions */}
+          <div className="p-5 sm:p-7 rounded-2xl bg-slate-950/90 border border-slate-800 space-y-5">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+              <div className="space-y-1 text-center md:text-right">
+                <h4 className="text-base sm:text-lg font-bold text-white flex items-center justify-center md:justify-start gap-2">
+                  <PenTool className="w-4 h-4 text-[#E5C158]" />
+                  <span>همین حالا سفارش خود را ثبت کنید یا با ما مشورت نمایید</span>
+                </h4>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  شرح ماجرا و مدارک خود را بفرستید؛ پیش‌نویس متن اختصاصی در سریع‌ترین زمان برای شما تنظیم می‌شود.
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+                <Link
+                  id="master-cta-order-btn"
+                  href={orderHref}
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#E5C158] via-[#d4af37] to-[#E5C158] text-[#070B15] font-black text-xs sm:text-sm shadow-md hover:brightness-110 transition-all active:scale-95"
+                >
+                  <Send className="w-4 h-4" />
+                  <span>{data.ctaPrimaryBtnText || 'سفارش آنلاین تنظیم متن اختصاصی'}</span>
+                </Link>
+
+                <a
+                  id="master-cta-phone-btn"
+                  href="tel:09915147789"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-xs sm:text-sm text-slate-200 font-bold transition-colors"
+                >
+                  <Phone className="w-4 h-4 text-emerald-400" />
+                  <span>تماس مستقیم: ۰۹۹۱۵۱۴۷۷۸۹</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Messengers Row with Persuasive Pre-filled Prompt */}
+            <div className="pt-4 border-t border-slate-800/80">
+              <div className="text-xs text-slate-400 mb-3 text-center sm:text-right flex items-center justify-center sm:justify-start gap-2">
+                <MessageCircle className="w-3.5 h-3.5 text-[#E5C158]" />
+                <span>یا برای بررسی مدارک در یکی از پیام‌رسان‌ها پیام دهید (پاسخگویی سریع):</span>
+              </div>
+              <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
+                {messengers.map((m) => (
+                  <a
+                    key={m.id}
+                    id={`master-messenger-${m.id}`}
+                    href={m.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={m.ariaLabel}
+                    className="flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl text-xs font-bold transition-all border border-slate-800 hover:border-[#E5C158]/50 bg-slate-900/90 hover:bg-slate-850 text-slate-200 hover:text-white shadow-xs group"
+                  >
+                    <span
+                      className="w-2.5 h-2.5 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: m.color }}
+                      aria-hidden="true"
+                    />
+                    <span className="truncate group-hover:text-white transition-colors">{m.name}</span>
+                    <ExternalLink className="w-3 h-3 text-slate-500 group-hover:text-[#E5C158] shrink-0" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      </Container>
+    </div>
+  );
+}
+

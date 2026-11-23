@@ -1,0 +1,1001 @@
+﻿keyword,clicks,impressions,ctr,position,priority,intent,cluster,coverage
+نامه به بیت رهبری,12,1602,0.75,8.81,P1-HighImpsLowCTR,Mixed,نامه-رهبری,GSC-measured
+نامه به رهبری,11,1524,0.72,9.27,P1-HighImpsLowCTR,Mixed,نامه-رهبری,GSC-measured
+متن نامه به رهبری برای کمک مالی,10,1313,0.76,9.6,P1-HighImpsLowCTR,Transactional/Sample,نامه-رهبری,GSC-measured
+نامه بیت رهبری,11,1132,0.97,7.15,P1-HighImpsLowCTR,Mixed,نامه-رهبری,GSC-measured
+سامانه مزایده املاک قوه قضاییه,14,1005,1.39,8.31,P1-HighImpsLowCTR,Navigational,مزایده,GSC-measured
+مزایده قوه قضاییه,3,680,0.44,9.2,P1-HighImpsLowCTR,Mixed,مزایده,GSC-measured
+سایت رسمی مزایده قوه قضاییه,12,654,1.83,9.19,P1-HighImpsLowCTR,Navigational,مزایده,GSC-measured
+شروع نامه به رهبری,11,576,1.91,9.79,P1-HighImpsLowCTR,Mixed,نامه-رهبری,GSC-measured
+شرکت در مزایده قوه قضاییه,8,563,1.42,31.64,P1-HighImpsLowCTR,Mixed,مزایده,GSC-measured
+نامه به رهبر,3,485,0.62,9.22,P1-HighImpsLowCTR,Mixed,نامه-رهبری,GSC-measured
+نمونه دادخواست ابطال مزایده اجرای احکام,13,462,2.81,8.23,P1-HighImpsLowCTR,Transactional/Sample,مزایده,GSC-measured
+نمونه نامه درخواست از شهرداری,12,434,2.76,5.49,P1-HighImpsLowCTR,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه دادخواست اعتراض ثالث اجرایی و ابطال مزایده,11,382,2.88,36.54,P1-HighImpsLowCTR,Transactional/Sample,مزایده,GSC-measured
+ابلاغیه الکترونیک,0,372,0.0,9.38,P1-HighImpsLowCTR,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه درخواست تخفیف مجازات ماده 442,4,316,1.27,6.31,P1-HighImpsLowCTR,Transactional/Sample,سایر,GSC-measured
+ثبت مزایده,0,310,0.0,60.25,P1-HighImpsLowCTR,Mixed,مزایده,GSC-measured
+فرم اعسار از هزینه دادرسی,0,219,0.0,8.77,P1-ZeroClick,Transactional/Sample,اعسار,GSC-measured
+محکوم له و محکوم علیه کیست,0,204,0.0,8.66,P1-ZeroClick,Mixed,سایر,GSC-measured
+نمونه دادخواست ابطال اجراییه چک از دادگاه,0,201,0.0,32.85,P1-ZeroClick,Transactional/Sample,چک,GSC-measured
+نامه به بیت رهبری برای کمک,0,193,0.0,7.45,P1-ZeroClick,Mixed,نامه-رهبری,GSC-measured
+ثبت نام تایر دولتی,0,182,0.0,9.38,P1-ZeroClick,Mixed,سایر,GSC-measured
+ابلاغیه الکترونیکی,0,135,0.0,8.76,P1-ZeroClick,Mixed,ابلاغ-الکترونیک,GSC-measured
+خودکاربری اشخاص حقوقی,0,127,0.0,8.48,P1-ZeroClick,Mixed,سایر,GSC-measured
+نمونه رای ابطال مزایده,0,116,0.0,55.47,P1-ZeroClick,Transactional/Sample,مزایده,GSC-measured
+نمونه دادخواست ابطال مزایده شهرداری,0,114,0.0,23.58,P1-ZeroClick,Transactional/Sample,مزایده,GSC-measured
+نمونه دادخواست ابطال عملیات اجرایی دادگاه,0,113,0.0,34.19,P1-ZeroClick,Transactional/Sample,سایر,GSC-measured
+نمونه رای ابطال مزایده اجرای ثبت,0,112,0.0,45.45,P1-ZeroClick,Transactional/Sample,مزایده,GSC-measured
+نمونه دادخواست ماده 148 قانون کار,0,108,0.0,9.19,P1-ZeroClick,Transactional/Sample,سایر,GSC-measured
+نمونه تنظیم دادخواست حقوقی,0,100,0.0,54.4,P1-ZeroClick,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست توقف عملیات اجرایی و ابطال اجراییه چک,50,1173,4.26,11.15,P2-Weak,Transactional/Sample,چک,GSC-measured
+عدل ایران ابلاغیه الکترونیکی,2,254,0.79,8.87,P2-Weak,Mixed,ابلاغ-الکترونیک,GSC-measured
+سایت مزایده قوه قضاییه,2,246,0.81,9.89,P2-Weak,Navigational,مزایده,GSC-measured
+نمونه درخواست صدور اجراییه چک از دادگاه,7,222,3.15,8.75,P2-Weak,Transactional/Sample,چک,GSC-measured
+تبدیل قرار بازداشت موقت به وثیقه,7,214,3.27,8.03,P2-Weak,Mixed,وثیقه,GSC-measured
+نمونه دادخواست اعسار از پرداخت جزای نقدی,10,202,4.95,8.34,P2-Weak,Transactional/Sample,اعسار,GSC-measured
+نامه به دفتر رهبری,4,198,2.02,9.1,P2-Weak,Mixed,نامه-رهبری,GSC-measured
+نمونه دادخواست ابطال مزایده,1,195,0.51,13.32,P2-Weak,Transactional/Sample,مزایده,GSC-measured
+مدت زمان ابلاغیه الکترونیکی,3,169,1.78,10.27,P2-Weak,Informational,ابلاغ-الکترونیک,GSC-measured
+سامانه مزایده قوه قضاییه,4,163,2.45,8.34,P2-Weak,Navigational,مزایده,GSC-measured
+ابلاغیه الکترونیکی ثنا,1,149,0.67,9.09,P2-Weak,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه درخواست حکم جلب از اجرای احکام,1,144,0.69,9.1,P2-Weak,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه اعتراض به مستثنیات دین در اجرای ثبت,5,132,3.79,8.16,P2-Weak,Transactional/Sample,سایر,GSC-measured
+سایت مزایده قوه قضاییه خودرو,2,123,1.63,8.83,P2-Weak,Navigational,مزایده,GSC-measured
+مهلت اعتراض به رای دادگاه ۲۰ روز کاری,1,107,0.93,9.62,P2-Weak,Mixed,سایر,GSC-measured
+متن نامه درخواست کمک از فرمانداری,2,96,2.08,8.17,P2-Weak,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه دادخواست فسخ معامله به دلیل عدم پرداخت ثمن,1,96,1.04,9.34,P2-Weak,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست رفع توقیف از اجرای احکام,4,93,4.3,9.67,P2-Weak,Transactional/Sample,اجرای-احکام,GSC-measured
+لایحه تسلیم به رای,0,93,0.0,8.06,P2-Weak,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست مطالبه وجه word,0,90,0.0,40.6,P2-Weak,Transactional/Sample,سایر,GSC-measured
+ابلاغیه دادگاه,0,89,0.0,10.36,P2-Weak,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه دادخواست مطالبه وجه و خسارت تاخیر تادیه,0,87,0.0,87.21,P2-Weak,Transactional/Sample,سایر,GSC-measured
+مزایده دادگستری,1,81,1.23,9.79,P2-Weak,Mixed,مزایده,GSC-measured
+ثبت نام لاستیک دولتی,2,80,2.5,22.18,P2-Weak,Mixed,سایر,GSC-measured
+icbar جستجوی وکیل,2,79,2.53,8.1,P2-Weak,Mixed,سایر,GSC-measured
+نمونه دادخواست اعتراض ثالث به عملیات اجرایی ثبت,1,79,1.27,8.14,P2-Weak,Transactional/Sample,اجرای-احکام,GSC-measured
+اختلاف نظر هیات کارشناسی سه نفره,1,79,1.27,8.32,P2-Weak,Mixed,سایر,GSC-measured
+نامه به مقام معظم رهبری,0,79,0.0,8.47,P2-Weak,Mixed,نامه-رهبری,GSC-measured
+نمونه درخواست رفع توقیف خودرو از دادگاه,1,78,1.28,8.05,P2-Weak,Transactional/Sample,اجرای-احکام,GSC-measured
+نامه برای بیت رهبری,0,76,0.0,8.37,P2-Weak,Mixed,نامه-رهبری,GSC-measured
+محکوم علیه کیست,0,76,0.0,10.04,P2-Weak,Mixed,سایر,GSC-measured
+لایحه درخواست اعمال ماده 3 قانون نحوه اجرای محکومیت های مالی,1,75,1.33,9.64,P2-Weak,Transactional/Sample,سایر,GSC-measured
+نمونه نوشتن دادخواست,0,72,0.0,46.6,P2-Weak,Transactional/Sample,سایر,GSC-measured
+نوشتن نامه به رهبر,1,71,1.41,8.51,P2-Weak,Mixed,نامه-رهبری,GSC-measured
+سایت شرکت در مزایده دادگستری,0,67,0.0,8.78,P2-Weak,Navigational,مزایده,GSC-measured
+مدت زمان کارشناسی سه نفره,1,66,1.52,8.61,P2-Weak,Informational,سایر,GSC-measured
+چگونه به رهبر نامه بنویسیم,1,66,1.52,9.42,P2-Weak,Informational,نامه-رهبری,GSC-measured
+تبدیل قرار وثیقه به کفالت,2,59,3.39,8.97,P2-Weak,Mixed,وثیقه,GSC-measured
+نمونه دادخواست مطالبه وجه واریزی اشتباهی,0,57,0.0,70.07,P2-Weak,Transactional/Sample,سایر,GSC-measured
+سامانه خودکاربری,0,55,0.0,9.25,P2-Weak,Navigational,سایر,GSC-measured
+نمونه دادخواست استرداد لاشه چک و ابطال اجراییه,0,55,0.0,9.27,P2-Weak,Transactional/Sample,چک,GSC-measured
+نمونه دادخواست تامین خواسته توقیف اموال,0,51,0.0,9.0,P2-Weak,Transactional/Sample,اجرای-احکام,GSC-measured
+نامه برای بیت رهبری برای کمک مالی,1,50,2.0,8.36,P2-Weak,Mixed,نامه-رهبری,GSC-measured
+نمونه دادخواست اعتراض ثالث اجرایی نسبت به توقیف ملک,105,819,12.82,5.2,P3-Strong,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه لایحه تسلیم به رای کیفری,40,537,7.45,6.45,P3-Strong,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه رفع توقیف خودرو مستثنیات دین,42,494,8.5,4.3,P3-Strong,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه لایحه تسلیم به حکم و تقاضای تخفیف,41,491,8.35,4.25,P3-Strong,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اعتراض ثالث اجرایی,25,476,5.25,8.44,P3-Strong,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه لایحه تبدیل قرار بازداشت موقت به وثیقه,33,426,7.75,4.18,P3-Strong,Transactional/Sample,وثیقه,GSC-measured
+نمونه درخواست آزادی مشروط,29,425,6.82,4.23,P3-Strong,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اعتراض ثالث اجرایی با سند عادی,41,403,10.17,5.38,P3-Strong,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه دادخواست ابطال اجراییه چک صیادی,21,342,6.14,8.41,P3-Strong,Transactional/Sample,چک,GSC-measured
+نمونه دادخواست اعتراض ثالث اجرایی ملک,29,332,8.73,6.13,P3-Strong,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه نامه به فرماندار و بخشدار,22,324,6.79,3.06,P3-Strong,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه درخواست جایگزینی وثیقه,52,273,19.05,2.5,P3-Strong,Transactional/Sample,وثیقه,GSC-measured
+نامه درخواست تحت پوشش قرار گرفتن کمیته امداد,29,238,12.18,3.92,P3-Strong,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه دادخواست اعتراض ثالث اجرایی و توقف عملیات اجرایی,24,160,15.0,4.62,P3-Strong,Transactional/Sample,اجرای-احکام,GSC-measured
+فرم اعسار از هزینه دادرسی مرحله تجدید نظر,20,136,14.71,8.26,P3-Strong,Transactional/Sample,اعسار,GSC-measured
+نمونه لایحه درخواست تغییر وثیقه,40,99,40.4,3.98,P3-Strong,Transactional/Sample,وثیقه,GSC-measured
+سایت نگارش یار,81,92,88.04,1.0,P3-Strong,Navigational,سایر,GSC-measured
+نگارش یار,48,77,62.34,2.01,P3-Strong,Mixed,سایر,GSC-measured
+نمونه درخواست تخفیف قرار وثیقه,43,64,67.19,1.0,P3-Strong,Transactional/Sample,وثیقه,GSC-measured
+نمونه درخواست تعویض سند در دادگاه,21,63,33.33,2.05,P3-Strong,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست تخفیف قرار تامین کیفری,33,59,55.93,1.0,P3-Strong,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه اعطای مهلت به محکوم علیه,20,48,41.67,4.42,P3-Strong,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست اعمال ماده 442 قانون آیین دادرسی کیفری,15,428,3.5,6.35,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه اظهارنامه ماده 156,5,298,1.68,4.57,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست تبدیل وثیقه به کفالت,17,284,5.99,3.41,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+متن درخواست اعسار و تقسیط,2,271,0.74,6.11,P4-Other,Transactional/Sample,اعسار,GSC-measured
+تبدیل وثیقه به فیش حقوقی,18,267,6.74,5.53,P4-Other,Mixed,وثیقه,GSC-measured
+نمونه نامه به شهرداری جهت مشکلات محله,5,238,2.1,5.47,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+متن نامه به کمیته امداد جهت تحت پوشش,9,211,4.27,4.44,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+درخواست نامه به فرمانداری,12,199,6.03,3.5,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نامه ب بیت رهبری,3,199,1.51,7.41,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نمونه لایحه اعتراض به قرار وثیقه,14,195,7.18,6.11,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه درخواست مرخصی زندانی از دادستان,5,177,2.82,6.19,P4-Other,Transactional/Sample,سایر,GSC-measured
+سامانه خودکاربری اشخاص حقوقی,1,176,0.57,7.88,P4-Other,Navigational,سایر,GSC-measured
+نمونه دادخواست تایید فسخ قرارداد و استرداد ثمن,8,166,4.82,6.11,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه متن درخواست تمدید مرخصی زندانی,7,161,4.35,6.68,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست ابطال چک صیادی,9,160,5.62,7.37,P4-Other,Transactional/Sample,چک,GSC-measured
+ترجمه رای دادگاه رایگان,14,157,8.92,3.94,P4-Other,Mixed,سایر,GSC-measured
+اختلاف نظر کارشناسی ۵نفره با کارشناسی سه نفره,3,149,2.01,6.74,P4-Other,Mixed,سایر,GSC-measured
+نمونه لایحه اعتراض به مستثنیات دین در اجرای احکام,5,147,3.4,7.59,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست تودیع وثیقه ملکی,3,147,2.04,7.68,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه لایحه تسلیم به رای,6,145,4.14,6.97,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به فرمانداری,3,135,2.22,3.43,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+اختلاف فاحش نظریه کارشناسی مابین کارشناس یک نفره و 3 نفره,6,132,4.55,6.55,P4-Other,Mixed,سایر,GSC-measured
+متن نامه درخواست کمک از بهزیستی,1,131,0.76,7.12,P4-Other,Transactional/Sample,سایر,GSC-measured
+فرم درخواست مرخصی زندانی,5,128,3.91,4.74,P4-Other,Transactional/Sample,سایر,GSC-measured
+طریقه نوشتن نامه به استانداری,8,123,6.5,5.2,P4-Other,Mixed,نامه-اداری,GSC-measured
+نمونه درخواست ضمانت با فیش حقوقی,1,123,0.81,5.47,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن درخواست تعویض وثیقه,17,122,13.93,2.29,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه درخواست توقیف اموال تامین خواسته,9,122,7.38,6.75,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه اعتراض به قرار موقوفی تعقیب,13,116,11.21,6.34,P4-Other,Transactional/Sample,سایر,GSC-measured
+نحوه نوشتن تقاضای نمونه نامه درخواست از شهرداری,2,115,1.74,5.53,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+متن نامه برای فرماندار,4,114,3.51,3.99,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه دادخواست اداره کار pdf,4,111,3.6,7.4,P4-Other,Transactional/Sample,سایر,GSC-measured
+لایحه مستثنیات دین منزل,5,110,4.55,6.23,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اعتراض ثالث اصلی و توقف عملیات اجرایی,3,109,2.75,7.92,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نامه به استانداری,2,104,1.92,4.77,P4-Other,Mixed,نامه-اداری,GSC-measured
+نمونه دادخواست دستور موقت توقف عملیات اجرایی چک,15,98,15.31,5.03,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه درخواست کفالت با فیش حقوقی,1,96,1.04,6.22,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نامه به استاندار,6,95,6.32,5.12,P4-Other,Mixed,نامه-اداری,GSC-measured
+نمونه دادخواست مطالبه نفقه زوجه و فرزند,15,93,16.13,5.65,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به شهرداری,3,90,3.33,5.73,P4-Other,Mixed,نامه-اداری,GSC-measured
+نمونه لایحه رفع توقیف از مستثنیات دین,4,89,4.49,7.35,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+برگشت پول مزایده,4,85,4.71,7.24,P4-Other,Mixed,مزایده,GSC-measured
+نمونه لایحه استرداد وثیقه,2,81,2.47,6.9,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه درخواست رفع بازداشت وثیقه,0,81,0.0,7.72,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه دادخواست فسخ معامله خودرو به دلیل عدم پرداخت ثمن,1,80,1.25,7.95,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به رهبری برای کمک مالی,2,79,2.53,7.61,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نامه به ریاست کمیته امداد,3,78,3.85,5.23,P4-Other,Mixed,نامه-اداری,GSC-measured
+لاستیک دولتی با برگه سبز,2,78,2.56,7.69,P4-Other,Mixed,سایر,GSC-measured
+نمونه لایحه اعتراض به قرار تامین خواسته کیفری,10,77,12.99,4.58,P4-Other,Transactional/Sample,سایر,GSC-measured
+لایحه تسلیم به رای و تخفیف مجازات,6,75,8.0,6.57,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه رفع توقیف ملک مستثنیات دین,1,75,1.33,6.11,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه درخواست آزادی زندانی,1,75,1.33,6.95,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به فرماندار مشکلات روستا,3,74,4.05,6.53,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه دادخواست مطالبه ودیعه اجاره,6,72,8.33,8.14,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست تبدیل قرار تامین کیفری,3,72,4.17,3.58,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به فرماندار شهرستان,7,71,9.86,3.08,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+ابلاغیه تا چه مدت در سامانه ثنا میماند,0,71,0.0,7.9,P4-Other,Informational,ابلاغ-الکترونیک,GSC-measured
+درخواست تحت پوشش کمیته امداد,4,70,5.71,7.01,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه اعتراض به قرار کفالت,1,69,1.45,6.72,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه درخواست رفع بازداشت سند از دادگاه,2,67,2.99,6.96,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به فرماندار,4,66,6.06,3.48,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+متن معرفی نامه به کمیته امداد,3,66,4.55,3.17,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+شرکت در مزایده دادگستری,5,65,7.69,7.0,P4-Other,Mixed,مزایده,GSC-measured
+متن درخواست عفو مشروط,3,64,4.69,5.08,P4-Other,Transactional/Sample,سایر,GSC-measured
+فرم درخواست تعویض وثیقه در دادگاه,12,62,19.35,2.45,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه نامه درخواست تحت پوشش قرار گرفتن کمیته امداد,8,62,12.9,3.98,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+اعتراض ثالث اجرایی با قولنامه عادی,4,62,6.45,9.65,P4-Other,Mixed,اجرای-احکام,GSC-measured
+نمونه دادخواست توقف عملیات اجرایی چک صیادی,8,61,13.11,5.03,P4-Other,Transactional/Sample,چک,GSC-measured
+نوشتن نامه به شهرداری,1,57,1.75,6.09,P4-Other,Mixed,نامه-اداری,GSC-measured
+نامه ای به بیت رهبری,1,57,1.75,7.42,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نمونه دادخواست مطالبه نفقه زوجه و فرزند مشترک,11,55,20.0,5.6,P4-Other,Transactional/Sample,سایر,GSC-measured
+دانلود رایگان نمونه دادخواست های حقوقی,3,55,5.45,8.84,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اعتراض ثالث به اثبات مالکیت,2,55,3.64,7.38,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+انصراف وثیقه گذار,2,53,3.77,6.7,P4-Other,Mixed,وثیقه,GSC-measured
+نمونه لایحه مستثنیات دین منزل,2,53,3.77,6.79,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به دفتر مقام معظم رهبری,2,53,3.77,6.94,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نامه به فرمانداری ویژه,3,52,5.77,4.23,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+تعویض وثیقه در دادگاه,3,51,5.88,8.96,P4-Other,Mixed,وثیقه,GSC-measured
+متن نامه درخواست به شهرداری,2,51,3.92,5.08,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه لایحه مستثنیات دین خودرو,10,50,20.0,3.66,P4-Other,Transactional/Sample,سایر,GSC-measured
+نحوه شرکت در مزایده قوه قضاییه,8,50,16.0,11.5,P4-Other,Informational,مزایده,GSC-measured
+نمونه دادخواست توقف عملیات اجرایی و ابطال اجراییه چک صیادی,4,50,8.0,5.66,P4-Other,Transactional/Sample,چک,GSC-measured
+بعد از کارشناس سه نفره چه باید کرد,1,50,2.0,6.3,P4-Other,Mixed,سایر,GSC-measured
+نمونه متن درخواست رفع توقیف ملک,1,49,2.04,9.24,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+ابلاغیه ثنا,1,49,2.04,9.69,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+چگونه برای رهبر نامه بنویسیم,0,49,0.0,8.0,P4-Other,Informational,نامه-رهبری,GSC-measured
+نوشتن نامه به بیت رهبری,1,48,2.08,8.96,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نمونه رای مستثنیات دین خودرو,1,48,2.08,9.08,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه نامه به شهرداری,0,48,0.0,5.1,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+ابلاغیه دادگستری,0,48,0.0,9.1,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه درخواست رفع توقیف اموال,1,47,2.13,8.6,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه دادخواست ماده ۲۳ قانون چک,0,47,0.0,6.77,P4-Other,Transactional/Sample,چک,GSC-measured
+انواع دادخواست حقوقی,0,47,0.0,70.81,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه به رهبری,2,46,4.35,6.93,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+فرم اعسار از هزینه دادرسی word,4,45,8.89,9.04,P4-Other,Transactional/Sample,اعسار,GSC-measured
+طریقه ی نوشتن نامه به بیت رهبری,2,45,4.44,8.96,P4-Other,Mixed,نامه-رهبری,GSC-measured
+دیه اعضای بدن,0,45,0.0,69.89,P4-Other,Mixed,سایر,GSC-measured
+نمونه نامه به بخشداری,4,44,9.09,6.11,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+متن نامه به رهبری برای کار,1,44,2.27,6.18,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+نمونه دادخواست استرداد ودیعه اجاره,1,44,2.27,7.25,P4-Other,Transactional/Sample,سایر,GSC-measured
+ابلاع با ابلاغیه الکترونیکی,0,44,0.0,9.86,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه دادخواست الزام به تفکیک و تنظیم سند رسمی,2,43,4.65,7.86,P4-Other,Transactional/Sample,سایر,GSC-measured
+مهلت اعتراض به نظریه کارشناسی,0,43,0.0,9.42,P4-Other,Mixed,سایر,GSC-measured
+نمونه لایحه رفع توقیف خودرو,5,42,11.9,6.9,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه لایحه تسلیم به رای مواد مخدر,2,42,4.76,8.17,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست مرخصی پابند الکترونیکی,2,42,4.76,9.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+معنی محکوم له و محکوم علیه,0,42,0.0,9.83,P4-Other,Mixed,سایر,GSC-measured
+اعتراض به قرار تامین کیفری,0,42,0.0,9.9,P4-Other,Mixed,سایر,GSC-measured
+نامه به فرمانداری شهرستان,2,41,4.88,3.68,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+درخواست آزادی مشروط,1,41,2.44,8.8,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه دفاعیه جلسه اول,1,41,2.44,10.34,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست مطالبه وجه سند عادی,0,41,0.0,44.95,P4-Other,Transactional/Sample,سایر,GSC-measured
+لایحه جلب محکوم علیه,2,40,5.0,7.25,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به شهرداری برای پروانه ساخت,1,40,2.5,7.7,P4-Other,Mixed,نامه-اداری,GSC-measured
+گرفتن لاستیک با برگ سبز,0,40,0.0,7.83,P4-Other,Mixed,سایر,GSC-measured
+فرم اعاده دادرسی کیفری دیوان عالی کشور,0,40,0.0,8.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به شهرداری جهت تعمیر کوچه,0,40,0.0,9.07,P4-Other,Mixed,نامه-اداری,GSC-measured
+ابلاغیه الکترونیکی قضایی,0,40,0.0,9.53,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه درخواست اعمال ماده 474,0,40,0.0,10.07,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست تایید فسخ قرارداد خودرو,3,39,7.69,3.36,P4-Other,Transactional/Sample,سایر,GSC-measured
+درخواست جایگزینی وثیقه,2,39,5.13,4.62,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه درخواست مرخصی پابند,2,39,5.13,7.97,P4-Other,Transactional/Sample,سایر,GSC-measured
+ستاد ایران مزایده دادگستری,1,39,2.56,7.62,P4-Other,Mixed,مزایده,GSC-measured
+متن نامه برای رهبر,0,39,0.0,6.18,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+بهترین وکیل ملکی در گیشا,0,39,0.0,44.26,P4-Other,Mixed,سایر,GSC-measured
+دادگاه کیفری,0,39,0.0,79.26,P4-Other,Mixed,سایر,GSC-measured
+نمونه نامه به استاندار,7,38,18.42,5.76,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه دادخواست اعتراض ثالث اجرایی خودرو,5,38,13.16,8.61,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه تسلیم به رای کیفری,4,38,10.53,6.79,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه برای کمیته امداد,1,38,2.63,5.47,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+متن لایحه تسلیم به رای,1,38,2.63,7.32,P4-Other,Transactional/Sample,سایر,GSC-measured
+دفتر خدمات قضایی آنلاین,2,37,5.41,8.7,P4-Other,Mixed,سایر,GSC-measured
+متن نامه به فرمانداری,0,37,0.0,4.05,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+لایحه یار,0,37,0.0,6.43,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به بیت رهبری برای کمک مالی,0,37,0.0,8.41,P4-Other,Mixed,نامه-رهبری,GSC-measured
+محکوم له کیست,0,37,0.0,9.73,P4-Other,Mixed,سایر,GSC-measured
+نمونه درخواست تبدیل قرار وثیقه به کفالت,3,36,8.33,4.39,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه درخواست عفو رهبری,1,36,2.78,5.36,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+سامانه ستاد قوه قضاییه,0,36,0.0,8.58,P4-Other,Navigational,سایر,GSC-measured
+لایحه اعتراض به قرار موقوفی تعقیب مرور زمان,3,35,8.57,7.43,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اعتراض ثالث اجرایی نسبت به توقیف خودرو,3,35,8.57,11.8,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+هیئت سه نفره کارشناسی چیست,1,35,2.86,4.14,P4-Other,Informational,سایر,GSC-measured
+نامه به بهزیستی جهت تحت پوشش,1,35,2.86,7.94,P4-Other,Mixed,سایر,GSC-measured
+سایت مزایده املاک دادگستری,1,35,2.86,9.31,P4-Other,Navigational,مزایده,GSC-measured
+مدت زمان ارسال اظهارنامه قضايي,1,35,2.86,9.51,P4-Other,Informational,سایر,GSC-measured
+اعتراض به هیات کارشناسی پنج نفره,0,35,0.0,5.09,P4-Other,Mixed,سایر,GSC-measured
+ابلاغیه الکترونیکی چیست,0,35,0.0,9.14,P4-Other,Informational,ابلاغ-الکترونیک,GSC-measured
+نمونه لایحه تسلیم به رای و درخواست تخفیف,3,34,8.82,5.06,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه به شورای حل اختلاف,3,34,8.82,9.26,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست مستثنیات دین,1,34,2.94,7.38,P4-Other,Transactional/Sample,سایر,GSC-measured
+ابلاغیه عدل ایران,0,34,0.0,9.06,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+وکیل تسخیری رایگان,0,34,0.0,9.41,P4-Other,Mixed,سایر,GSC-measured
+نامه به بخشداری مرکزی,2,33,6.06,5.33,P4-Other,Mixed,نامه-اداری,GSC-measured
+نمونه درخواست تعلیق مجازات,1,33,3.03,8.21,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اعسار از هزینه دادرسی تجدید نظر,1,33,3.03,12.36,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نمونه لایحه درخواست تجدید مزایده,0,33,0.0,8.67,P4-Other,Transactional/Sample,مزایده,GSC-measured
+قرار کفالت با فیش حقوقی,0,33,0.0,9.18,P4-Other,Mixed,وثیقه,GSC-measured
+نمونه دادخواست مطالبه ودیعه از موجر,3,32,9.38,8.94,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به بخشداری,2,32,6.25,5.16,P4-Other,Mixed,نامه-اداری,GSC-measured
+فرم تقاضای شخصی زندانی,1,32,3.12,6.03,P4-Other,Transactional/Sample,سایر,GSC-measured
+فرم اعسار از هزینه دادرسی تجدید نظر,1,32,3.12,9.69,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نمونه درخواست اعاده دادرسی کیفری ماده 474,1,32,3.12,12.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+لاستیک با برگه سبز,0,32,0.0,8.12,P4-Other,Mixed,سایر,GSC-measured
+نحوه اعتراض به قرار دادسرا در عدل ایران,0,32,0.0,9.0,P4-Other,Informational,ابلاغ-الکترونیک,GSC-measured
+نمونه متن درخواست عفو رهبری,1,31,3.23,4.71,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+نوشتن نامه برای رهبر,1,31,3.23,7.55,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نمونه دادخواست مطالبه وجه شورای حل اختلاف,0,31,0.0,63.81,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به کمیته امداد جهت تحت پوشش,3,30,10.0,5.9,P4-Other,Mixed,نامه-اداری,GSC-measured
+نمونه نامه به اداره بهزیستی,2,30,6.67,7.27,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه برای فرمانداری,1,30,3.33,2.97,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+متن نامه درخواست بخشودگی جرایم بانکی,1,30,3.33,4.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه درخواست اعمال ماده 3 قانون نحوه اجرای محکومیت های مالی,1,30,3.33,8.93,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست صدور اجراییه چک,1,30,3.33,9.1,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه اعتراض به قرار دادسرا,0,30,0.0,9.77,P4-Other,Transactional/Sample,سایر,GSC-measured
+دریافت سهمیه لاستیک دولتی,0,30,0.0,15.7,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست اعتراض ثالث اجرایی به توقیف ملک,8,29,27.59,4.69,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه درخواست اجراییه چک صیادی,3,29,10.34,8.38,P4-Other,Transactional/Sample,چک,GSC-measured
+متن درخواست مرخصی برای زندانی,1,29,3.45,4.69,P4-Other,Transactional/Sample,سایر,GSC-measured
+خود کاربری اشخاص حقیقی,0,29,0.0,8.14,P4-Other,Mixed,سایر,GSC-measured
+ابلاغیه الکترونیکی عدل ایران,0,29,0.0,8.9,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه درخواست تبدیل قرار بازداشت به وثیقه,7,28,25.0,4.04,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه دادخواست توقف عملیات اجرایی چک,5,28,17.86,7.25,P4-Other,Transactional/Sample,چک,GSC-measured
+متن نامه درخواست مرخصی زندانی از دادستان,3,28,10.71,4.29,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست تسلیم به رای کیفری,1,28,3.57,7.57,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه به شهرداری جهت آسفالت کوچه,0,28,0.0,9.25,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+بهترین وکیل در گیشا,0,28,0.0,46.46,P4-Other,Mixed,سایر,GSC-measured
+نمونه متن درخواست جلب محکوم علیه,1,27,3.7,7.26,P4-Other,Transactional/Sample,سایر,GSC-measured
+دفتر خدمات قضایی غیر حضوری,0,27,0.0,7.07,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست الزام تامین اجتماعی به اجرای رای اداره کار,0,27,0.0,7.93,P4-Other,Transactional/Sample,سایر,GSC-measured
+ابلاغ الکترونیکی,0,27,0.0,8.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه دادخواست به دیوان عدالت اداری,0,27,0.0,9.41,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه برای رهبری,0,27,0.0,9.67,P4-Other,Mixed,نامه-رهبری,GSC-measured
+خواسته ابطال مزایده,0,27,0.0,54.59,P4-Other,Mixed,مزایده,GSC-measured
+نمونه لایحه درخواست مرخصی از زندان,6,26,23.08,3.77,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اعسار از پرداخت هزینه دادرسی در مرحله تجدید نظر,3,26,11.54,12.54,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نمونه درخواست فک قرار بازداشت موقت,1,26,3.85,7.54,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه لایحه دفاعیه حقوقی خوانده,1,26,3.85,12.62,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه درخواست بخشودگی جرایم بانکی,0,26,0.0,5.08,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه متن نامه به شهردار تهران,0,26,0.0,7.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+خودکاربری عدل ایران,0,26,0.0,8.38,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+سامانه عدل ایران ابلاغیه,0,26,0.0,10.0,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+ثبت نام مزایده قوه قضاییه,3,25,12.0,8.2,P4-Other,Mixed,مزایده,GSC-measured
+نمونه نامه به فرمانداری جهت درخواست گاز,2,25,8.0,8.0,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+متن درخواست صدور اجراییه چک,2,25,8.0,8.28,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه دادخواست ابطال اجراییه چک,2,25,8.0,9.92,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه متن درخواست تسلیم به رای,1,25,4.0,7.08,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست توقف عملیات اجرایی و ابطال اجراییه,1,25,4.0,10.28,P4-Other,Transactional/Sample,چک,GSC-measured
+متن درخواست مرخصی زندانی,0,25,0.0,4.68,P4-Other,Transactional/Sample,سایر,GSC-measured
+ابلاغیه قضایی,0,25,0.0,7.84,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+معنی محکوم له,0,25,0.0,10.92,P4-Other,Mixed,سایر,GSC-measured
+جستجوی وکیل مرکز وکلا,0,25,0.0,11.0,P4-Other,Mixed,سایر,GSC-measured
+ارسال نامه به رهبر,0,25,0.0,11.24,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نمونه دادخواست ابطال عملیات اجرایی ثبت,0,25,0.0,27.72,P4-Other,Transactional/Sample,سایر,GSC-measured
+دانلود رایگان نمونه دادخواست,2,24,8.33,8.46,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست مهلت از اجرای احکام,1,24,4.17,5.96,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه ب رهبر,1,24,4.17,8.79,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نامه اداری به شهرداری,0,24,0.0,5.79,P4-Other,Mixed,نامه-اداری,GSC-measured
+چگونه به بیت رهبری نامه بنویسیم,0,24,0.0,8.67,P4-Other,Informational,نامه-رهبری,GSC-measured
+جستجوی وکیل کانون مرکز,0,24,0.0,9.21,P4-Other,Mixed,سایر,GSC-measured
+عدل ایران ابلاغیه,0,24,0.0,10.17,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه دادخواست اعتراض ثالث بعد از اجرای حکم,0,24,0.0,10.25,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه درخواست تبدیل قرار بازداشت موقت به وثیقه,2,23,8.7,6.17,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نامه به شهرداری جهت جدول کشی,1,23,4.35,6.35,P4-Other,Mixed,نامه-اداری,GSC-measured
+نمونه رای اعتراض ثالث اجرایی با سند عادی,1,23,4.35,9.48,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+بانک دادخواست های حقوقی,1,23,4.35,11.52,P4-Other,Transactional/Sample,سایر,GSC-measured
+نحوه دریافت لاستیک دولتی,0,23,0.0,9.22,P4-Other,Informational,سایر,GSC-measured
+متن درخواست ضمانت دادگاه,0,23,0.0,9.91,P4-Other,Transactional/Sample,سایر,GSC-measured
+دادخواست مطالبه وجه چک,0,23,0.0,79.65,P4-Other,Transactional/Sample,چک,GSC-measured
+ترجمه رای دادگاه به زبان ساده,6,22,27.27,2.86,P4-Other,Mixed,سایر,GSC-measured
+نمونه اعتراض به قرار تامین کیفری,2,22,9.09,2.09,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست وثیقه گذار,1,22,4.55,7.68,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه تسلیم به رای,1,22,4.55,7.95,P4-Other,Transactional/Sample,سایر,GSC-measured
+ارسال نامه به کمیته امداد امام خمینی,1,22,4.55,8.77,P4-Other,Mixed,نامه-اداری,GSC-measured
+نامه شهرداری,0,22,0.0,6.64,P4-Other,Mixed,نامه-اداری,GSC-measured
+بیت رهبری نامه,0,22,0.0,8.0,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نامه به بهزیستی,0,22,0.0,8.91,P4-Other,Mixed,سایر,GSC-measured
+ستاد ایران مزایده املاک,0,22,0.0,9.18,P4-Other,Mixed,مزایده,GSC-measured
+سامانه خودکاربری اشخاص حقیقی,0,22,0.0,9.32,P4-Other,Navigational,سایر,GSC-measured
+محکوم له و محکوم علیه,0,22,0.0,9.59,P4-Other,Mixed,سایر,GSC-measured
+سایت نوبت دهی تایرستان ثبت نام,2,21,9.52,7.1,P4-Other,Navigational,سایر,GSC-measured
+نامه به رهبر انقلاب,2,21,9.52,9.71,P4-Other,Mixed,نامه-رهبری,GSC-measured
+متن نامه به فرماندار,1,21,4.76,3.62,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+متن نامه به بیت رهبری,1,21,4.76,6.38,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+نمونه دادخواست اجراییه مستقیم چک,1,21,4.76,8.33,P4-Other,Transactional/Sample,چک,GSC-measured
+متن نامه درخواست بخشودگی وام,0,21,0.0,2.05,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه حکم اجراییه مهریه,0,21,0.0,3.95,P4-Other,Transactional/Sample,چک,GSC-measured
+نامه برای شهرداری,0,21,0.0,5.86,P4-Other,Mixed,نامه-اداری,GSC-measured
+سایت مزایده املاک قوه قضاییه,0,21,0.0,7.95,P4-Other,Navigational,مزایده,GSC-measured
+لاستیک دولتی با برگ سبز,0,21,0.0,8.05,P4-Other,Mixed,سایر,GSC-measured
+ثبت نام لاستیک با برگ سبز,0,21,0.0,8.43,P4-Other,Mixed,سایر,GSC-measured
+متن تسلیم به رای دادگاه,0,21,0.0,8.43,P4-Other,Transactional/Sample,سایر,GSC-measured
+دانش حقوقی عدل ایران,0,21,0.0,8.62,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+متن تسلیم به رای,0,21,0.0,8.81,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اعاده به وضع سابق,0,21,0.0,9.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اداره کار,0,21,0.0,9.71,P4-Other,Transactional/Sample,سایر,GSC-measured
+ورود به سامانه خودکاربری اشخاص حقیقی,0,21,0.0,10.38,P4-Other,Navigational,سایر,GSC-measured
+سامانه مزایده دادگستری,0,21,0.0,10.67,P4-Other,Navigational,مزایده,GSC-measured
+نمونه نامه درخواست کمک مالی از کمیته امداد,1,20,5.0,6.2,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه درخواست جلب محکوم علیه,1,20,5.0,7.75,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست های حقوقی pdf,1,20,5.0,9.7,P4-Other,Transactional/Sample,سایر,GSC-measured
+سایت مزایده اجرای احکام,1,20,5.0,10.3,P4-Other,Navigational,مزایده,GSC-measured
+نمونه درخواست رفع توقیف خودرو از اداره ثبت,0,20,0.0,6.6,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه درخواست صدور قرار وثیقه,0,20,0.0,8.2,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+محکوم له به چه معناست,0,20,0.0,9.5,P4-Other,Mixed,سایر,GSC-measured
+نامه دفتر رهبری,0,20,0.0,9.55,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نمونه دادخواست رفع توقیف پلاک خودرو,0,20,0.0,9.9,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+اپلیکیشن مزایده دادگستری,0,20,0.0,11.6,P4-Other,Mixed,مزایده,GSC-measured
+نمونه لایحه درخواست مهلت از دادگاه,3,19,15.79,6.79,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه رسمی,1,19,5.26,3.53,P4-Other,Mixed,سایر,GSC-measured
+متن نامه درخواست به فرمانداری,1,19,5.26,4.11,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه لایحه درخواست جلب محکوم علیه,1,19,5.26,7.37,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه به کمیسیون ماده 100,1,19,5.26,7.42,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه کاهش خواسته,1,19,5.26,8.37,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست ضمانت با پروانه کسب,0,19,0.0,8.74,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست خسارت تاخیر در تخلیه,0,19,0.0,9.47,P4-Other,Transactional/Sample,سایر,GSC-measured
+عریضه نویسی,0,19,0.0,57.84,P4-Other,Mixed,سایر,GSC-measured
+کارشناس سه نفره چیست,1,18,5.56,5.28,P4-Other,Informational,سایر,GSC-measured
+نمونه درخواست تقسیط جزای نقدی,1,18,5.56,8.06,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نمونه دادخواست الزام به اخذ پایان کار و صورتمجلس تفکیکی,1,18,5.56,10.06,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست تامین خواسته توقیف ودیعه مستاجر,1,18,5.56,11.11,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+ثبت نام مزایده دادگستری,0,18,0.0,7.94,P4-Other,Mixed,مزایده,GSC-measured
+وکیل منصف در تهران,0,18,0.0,8.61,P4-Other,Mixed,سایر,GSC-measured
+سامانه ابلاغ الکترونیک قضایی,0,18,0.0,10.0,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+خودکاربری وکلا عدل ایران,0,18,0.0,10.11,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه دادخواست ابطال اجراییه چک به دلیل پرداخت وجه,0,18,0.0,10.17,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه لایحه ابطال مزایده,4,17,23.53,5.82,P4-Other,Transactional/Sample,مزایده,GSC-measured
+نحوه نوشتن نمونه متن درخواست مرخصی زندانی,3,17,17.65,3.76,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه جلب محکوم علیه,1,17,5.88,6.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+خرید لاستیک دولتی با برگ سبز,1,17,5.88,8.71,P4-Other,Mixed,سایر,GSC-measured
+لایحه درخواست جلب محکوم علیه,1,17,5.88,8.82,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اجراییه چک صیادی,1,17,5.88,9.41,P4-Other,Transactional/Sample,چک,GSC-measured
+سامانه محاسبه آنلاین مهریه به نرخ روز,1,17,5.88,13.82,P4-Other,Navigational,سایر,GSC-measured
+نمونه دادخواست رفع تصرف عدوانی,0,17,0.0,6.88,P4-Other,Transactional/Sample,سایر,GSC-measured
+سامانه ستاد مزایده قوه قضاییه,0,17,0.0,7.71,P4-Other,Navigational,مزایده,GSC-measured
+خود کاربری اشخاص حقوقی,0,17,0.0,9.0,P4-Other,Mixed,سایر,GSC-measured
+هیات سه نفره کارشناسی,0,17,0.0,9.35,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست تایید فسخ قرارداد,0,17,0.0,9.53,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست صدور اجراییه چک طبق قانون جدید,0,17,0.0,10.06,P4-Other,Transactional/Sample,چک,GSC-measured
+شماره برگ سبز خودرو کجاست برای ثبت نام لاستیک,0,17,0.0,10.18,P4-Other,Mixed,سایر,GSC-measured
+محاسبه مهریه آنلاین,0,17,0.0,68.24,P4-Other,Mixed,سایر,GSC-measured
+دیه نقص عضو,0,17,0.0,77.06,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست دیوان عدالت اداری به طرفیت اداره کار,2,16,12.5,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نوشتن نمونه متن نامه به رهبر انقلاب,1,16,6.25,4.12,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+متن نامه به شهرداری,0,16,0.0,5.31,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+راهنمای سامانه خودکاربری اشخاص حقوقی,0,16,0.0,6.75,P4-Other,Informational,سایر,GSC-measured
+درخواست مرخصی زندانی,0,16,0.0,7.75,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه معرفی مال جهت رفع جلب,0,16,0.0,8.62,P4-Other,Transactional/Sample,سایر,GSC-measured
+سامانه جستجوی وکیل کانون وکلا,0,16,0.0,9.31,P4-Other,Navigational,سایر,GSC-measured
+ثنا ابلاغیه,0,16,0.0,11.44,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه دادخواست,0,16,0.0,35.25,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست نفقه زوجه و فرزند,3,15,20.0,5.8,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست صدور اجرائیه چک,1,15,6.67,8.33,P4-Other,Transactional/Sample,چک,GSC-measured
+متن درخواست مرخصی پابند الکترونیکی,1,15,6.67,9.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه نامه شهرداری,0,15,0.0,4.8,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه نامه به رهبری,0,15,0.0,5.2,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+سامانه خود کاربری اشخاص حقوقی,0,15,0.0,7.33,P4-Other,Navigational,سایر,GSC-measured
+مزایدات دادگستری,0,15,0.0,8.73,P4-Other,Mixed,سایر,GSC-measured
+فرم تقاضای صدور اجرائیه چک word,0,15,0.0,8.87,P4-Other,Transactional/Sample,چک,GSC-measured
+پیام به بیت رهبری,0,15,0.0,9.07,P4-Other,Mixed,نامه-رهبری,GSC-measured
+فرق محکوم له و محکوم علیه,0,15,0.0,9.27,P4-Other,Mixed,سایر,GSC-measured
+هیئت سه نفره کارشناس خط,0,15,0.0,9.27,P4-Other,Mixed,سایر,GSC-measured
+نمونه لایحه تسلیم به رای و تقاضای تخفیف,3,14,21.43,5.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه به بنیاد شهید,1,14,7.14,4.21,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه به رهبر,1,14,7.14,5.86,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+لایحه اعتراض به قرار منع تعقیب,1,14,7.14,10.07,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه رسمی به شهرداری,0,14,0.0,5.29,P4-Other,Mixed,نامه-اداری,GSC-measured
+نمونه دادخواست الزام اداره ثبت احوال به صدور شناسنامه,0,14,0.0,6.07,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به شهرداری برای سد معبر,0,14,0.0,6.21,P4-Other,Mixed,نامه-اداری,GSC-measured
+نامه به شهرداری برای جدول کشی,0,14,0.0,6.43,P4-Other,Mixed,نامه-اداری,GSC-measured
+درخواست کمک نوشتن نمونه متن نامه به رهبر انقلاب,0,14,0.0,6.57,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+نمونه لایحه اعمال ماده 3 محکومیت های مالی,0,14,0.0,8.14,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه برای بهزیستی,0,14,0.0,8.64,P4-Other,Mixed,سایر,GSC-measured
+سایت بیت رهبری نامه,0,14,0.0,8.86,P4-Other,Navigational,نامه-رهبری,GSC-measured
+اخطاریه دادگاه,0,14,0.0,9.21,P4-Other,Mixed,سایر,GSC-measured
+سهمیه لاستیک دولتی,0,14,0.0,9.29,P4-Other,Mixed,سایر,GSC-measured
+مزایده های قوه قضاییه,0,14,0.0,9.93,P4-Other,Mixed,مزایده,GSC-measured
+محکوم له در جدول,0,14,0.0,10.0,P4-Other,Mixed,سایر,GSC-measured
+نمونه لایحه به اجرای احکام مدنی,0,14,0.0,10.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+درخواست کمک نقدی فوری از رهبر,0,14,0.0,11.57,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+میخوام به رهبر نامه بنویسم راهنمایی,0,14,0.0,12.29,P4-Other,Informational,نامه-رهبری,GSC-measured
+نمونه لایحه درخواست جایگزینی وثیقه,9,13,69.23,1.15,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه دادخواست مطالبه مهریه با اعمال ماده ۵,2,13,15.38,16.38,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه به مدیر کل بهزیستی,1,13,7.69,8.31,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه برای کمیته امداد,0,13,0.0,4.62,P4-Other,Mixed,نامه-اداری,GSC-measured
+متن نامه رهبری,0,13,0.0,8.54,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+فرم صورت اموال هزینه دادرسی,0,13,0.0,9.23,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه درخواست شناسه پرداخت,0,13,0.0,9.46,P4-Other,Transactional/Sample,سایر,GSC-measured
+وکیل وصیت‌نامه در تهران,0,13,0.0,76.54,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست تقسیط جزای نقدی,4,12,33.33,7.42,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نمونه لایحه اسقاط حق تجدیدنظرخواهی کیفری,2,12,16.67,8.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+درخواست مرخصی برای زندانی,2,12,16.67,8.83,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه به استانداری,1,12,8.33,8.17,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه دادخواست ابطال اجرائیه چک,1,12,8.33,9.58,P4-Other,Transactional/Sample,چک,GSC-measured
+دفتر خدمات قضایی انلاین,1,12,8.33,9.75,P4-Other,Mixed,سایر,GSC-measured
+نمونه لایحه درخواست تعلیق اجرای مجازات,1,12,8.33,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه نوشتن لایحه دفاعیه کیفری,1,12,8.33,10.75,P4-Other,Transactional/Sample,سایر,GSC-measured
+پس گرفتن ضمانت فیش حقوقی,0,12,0.0,4.75,P4-Other,Mixed,سایر,GSC-measured
+متن نامه برای شهرداری,0,12,0.0,5.08,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه نامه به بنیاد شهید,0,12,0.0,5.42,P4-Other,Transactional/Sample,سایر,GSC-measured
+خودکاربری اشخاص حقیقی,0,12,0.0,7.67,P4-Other,Mixed,سایر,GSC-measured
+نامه مردمی به رهبری,0,12,0.0,7.83,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نمونه دادخواست متن شکایت از کارفرما در اداره کار,0,12,0.0,8.08,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه آزادی سند,0,12,0.0,8.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه قرارداد وکالت,0,12,0.0,8.83,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه سهو قلم,0,12,0.0,9.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+ثبت نام لاستیک ایران تایر دولتی,0,12,0.0,9.42,P4-Other,Mixed,سایر,GSC-measured
+نمونه لایحه درخواست اجرای تامین خواسته حقوقی,0,12,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+اعتراض به رای دادگاه بعد از مهلت قانونی,0,12,0.0,11.5,P4-Other,Mixed,سایر,GSC-measured
+بهترین وکیل تنظیم لایحه تهران,0,12,0.0,80.42,P4-Other,Transactional/Sample,سایر,GSC-measured
+وکیل قرارداد در تهران,0,12,0.0,96.75,P4-Other,Mixed,سایر,GSC-measured
+نمونه درخواست ضبط وثیقه,1,11,9.09,10.82,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه لایحه اخذ اخرین دفاع,1,11,9.09,11.73,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست مطالبه خسارت تاخیر تادیه چک صیادی,1,11,9.09,16.18,P4-Other,Transactional/Sample,چک,GSC-measured
+نامه به بخشدار,0,11,0.0,5.0,P4-Other,Mixed,نامه-اداری,GSC-measured
+متن اعتراض به قرار منع تعقیب,0,11,0.0,8.64,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست کفالت از متهم,0,11,0.0,8.82,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+ارسال نامه به مقام معظم رهبری,0,11,0.0,9.55,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نمونه لایحه اعتراض به قرار دادسرا,0,11,0.0,9.55,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه نامه آزادی زندانی,0,11,0.0,9.73,P4-Other,Transactional/Sample,سایر,GSC-measured
+مزایده قوه قضائیه,0,11,0.0,10.0,P4-Other,Mixed,مزایده,GSC-measured
+نمونه اظهارنامه,0,11,0.0,11.27,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست مطالبه وجه بدون مدرک,0,11,0.0,40.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+محاسبه مهریه به نرخ روز,0,11,0.0,42.91,P4-Other,Mixed,سایر,GSC-measured
+وکیل تنظیم قرارداد در تهران,0,11,0.0,92.64,P4-Other,Mixed,سایر,GSC-measured
+نمونه نامه درخواست تحت پوشش کمیته امداد,1,10,10.0,4.5,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+طریقه نوشتن نامه به استاندار برای کار,1,10,10.0,4.7,P4-Other,Mixed,نامه-اداری,GSC-measured
+محکوم‌له,1,10,10.0,6.5,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست های دفاتر خدمات قضایی,1,10,10.0,7.4,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اجراییه چک,1,10,10.0,8.4,P4-Other,Transactional/Sample,چک,GSC-measured
+درخواست کمک مالی از بیت رهبری,1,10,10.0,9.5,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+نمونه رای تقسیط جزای نقدی,1,10,10.0,10.4,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نامه برای فرمانداری,0,10,0.0,3.0,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نحوه نوشتن درخواست تحت پوشش کمیته امداد,0,10,0.0,4.5,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+ارسال نامه به ریاست جمهوری,0,10,0.0,6.2,P4-Other,Mixed,سایر,GSC-measured
+مرجع وکلا,0,10,0.0,6.2,P4-Other,Mixed,سایر,GSC-measured
+فرم دادخواست اداره کار word,0,10,0.0,6.4,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه نامه اداری,0,10,0.0,6.6,P4-Other,Transactional/Sample,سایر,GSC-measured
+هیئت کارشناسی پنج نفره,0,10,0.0,7.0,P4-Other,Mixed,سایر,GSC-measured
+سامانه وکلا و کارشناسان عدل ایران,0,10,0.0,7.2,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+نامه به فرمانداری برای کار,0,10,0.0,7.2,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+فرم اعسار هزینه دادرسی,0,10,0.0,8.2,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نمونه دادخواست نفقه زوجه,0,10,0.0,8.2,P4-Other,Transactional/Sample,سایر,GSC-measured
+لاستیک با برگ سبز خودرو,0,10,0.0,8.9,P4-Other,Mixed,سایر,GSC-measured
+عدل یار,0,10,0.0,9.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه نامه درخواست تحت پوشش بهزیستی,0,10,0.0,9.1,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اثبات تضمینی بودن چک,0,10,0.0,9.2,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه دادخواست فسخ معامله به دلیل غبن فاحش,0,10,0.0,9.2,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه سند خودرو مزایده ای,0,10,0.0,9.2,P4-Other,Transactional/Sample,مزایده,GSC-measured
+ستاد قوه قضاییه,0,10,0.0,9.8,P4-Other,Mixed,سایر,GSC-measured
+سامانه ثنا ابلاغیه,0,10,0.0,10.3,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+نمونه درخواست پایان حبس,0,10,0.0,11.3,P4-Other,Transactional/Sample,سایر,GSC-measured
+محاسبه آنلاین مهریه,0,10,0.0,44.5,P4-Other,Mixed,سایر,GSC-measured
+بهترین وکیل دیه در کرمانشاه,0,10,0.0,91.3,P4-Other,Mixed,سایر,GSC-measured
+نمونه لایحه دفاعیه,3,9,33.33,18.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+مهلت ابلاغیه الکترونیکی,1,9,11.11,7.89,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه لایحه,1,9,11.11,18.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+نحوه اطلاع از مزایده های دادگستری,1,9,11.11,20.56,P4-Other,Informational,مزایده,GSC-measured
+نامه کمیته امداد,0,9,0.0,3.22,P4-Other,Mixed,نامه-اداری,GSC-measured
+دادخواست اعتراض ثالث اجرایی و توقف عملیات اجرایی,0,9,0.0,3.67,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه متن تسلیم به رای,0,9,0.0,6.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+ستاد مزایده قوه قضاییه,0,9,0.0,7.22,P4-Other,Mixed,مزایده,GSC-measured
+سامانه خودکاربری وکلا و کارشناسان,0,9,0.0,7.67,P4-Other,Navigational,سایر,GSC-measured
+تفاوت محکوم له و محکوم علیه,0,9,0.0,7.78,P4-Other,Mixed,سایر,GSC-measured
+نمونه دستور موقت توقف عملیات اجرایی,0,9,0.0,8.78,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه درخواست رفع توقیف سند,0,9,0.0,8.89,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه متن درخواست کفالت,0,9,0.0,9.0,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه نامه به دادگاه,0,9,0.0,9.22,P4-Other,Transactional/Sample,سایر,GSC-measured
+ابلاغیه قضایی الکترونیکی,0,9,0.0,9.56,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+تحویل لاستیک دولتی چقدر طول میکشد,0,9,0.0,9.67,P4-Other,Mixed,سایر,GSC-measured
+مزایدات قوه قضاییه,0,9,0.0,9.89,P4-Other,Mixed,سایر,GSC-measured
+نامه ب رهبری,0,9,0.0,9.89,P4-Other,Mixed,نامه-رهبری,GSC-measured
+منظور از محکوم له,0,9,0.0,10.0,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست الزام به تفکیک ملک,0,9,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+پیگیری نامه ریاست جمهوری با کد رهگیری,0,9,0.0,10.0,P4-Other,Mixed,سایر,GSC-measured
+نحوه ثبت نام خودکاربری دانش حقوقی,0,9,0.0,10.33,P4-Other,Informational,سایر,GSC-measured
+نامه درخواست کمک از بنیاد مستضعفان,0,9,0.0,10.78,P4-Other,Transactional/Sample,سایر,GSC-measured
+اعتراض شخص ثالث به توقیف اموال با قولنامه عادی,0,9,0.0,12.67,P4-Other,Mixed,اجرای-احکام,GSC-measured
+ثنا ابلاغ,0,9,0.0,13.22,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+درخواست کمک از بهزیستی,0,9,0.0,22.22,P4-Other,Transactional/Sample,سایر,GSC-measured
+محاسبه آنلاین مهریه زن متوفی,0,9,0.0,39.0,P4-Other,Mixed,سایر,GSC-measured
+بهترین وکیل تنظیم لایحه در تهران,0,9,0.0,79.11,P4-Other,Transactional/Sample,سایر,GSC-measured
+بهترین وکیل سرقفلی در تبریز,0,9,0.0,92.22,P4-Other,Mixed,سایر,GSC-measured
+نمونه متن درخواست آزادی مشروط,1,8,12.5,4.88,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه به نماینده ولی فقیه,1,8,12.5,8.12,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اعسار از هزینه دادرسی در مرحله تجدید نظر,1,8,12.5,9.0,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نمونه دادخواست اعسار از پرداخت دیه,1,8,12.5,10.88,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نمونه درخواست تخفیف مجازات کیفری,1,8,12.5,10.88,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن شکایت از کارفرما بابت حقوق و بیمه,1,8,12.5,12.62,P4-Other,Transactional/Sample,سایر,GSC-measured
+شماره دادنامه چند رقمی است,0,8,0.0,4.38,P4-Other,Mixed,سایر,GSC-measured
+متن نامه برای بیت رهبری,0,8,0.0,6.5,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+نمونه شروع نامه به رهبری,0,8,0.0,6.88,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+نامه به شهردار,0,8,0.0,7.0,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست ابطال اجراییه چک و توقف عملیات اجرایی,0,8,0.0,7.12,P4-Other,Transactional/Sample,چک,GSC-measured
+متن نامه درخواست تحت پوشش بهزیستی,0,8,0.0,7.25,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه رفع توقیف سند ملک,0,8,0.0,7.5,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+قرارداد مالی وکالت,0,8,0.0,7.75,P4-Other,Mixed,سایر,GSC-measured
+محکوم له و محکوم علیه یعنی چی,0,8,0.0,8.0,P4-Other,Mixed,سایر,GSC-measured
+نمونه لایحه مستثنیات دین,0,8,0.0,8.12,P4-Other,Transactional/Sample,سایر,GSC-measured
+درخواست مرخصی از زندان,0,8,0.0,8.25,P4-Other,Transactional/Sample,سایر,GSC-measured
+ابلاغ الکترونیکی قضایی,0,8,0.0,8.38,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نامه درخواست از شهرداری,0,8,0.0,8.62,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+سامانه ثنا ابلاغ الکترونیک,0,8,0.0,8.75,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+نمونه درخواست رفع توقیف خودرو از اجرای احکام,0,8,0.0,8.88,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+قیمت لاستیک دولتی با برگ سبز,0,8,0.0,9.12,P4-Other,Mixed,سایر,GSC-measured
+نامه برای رهبر,0,8,0.0,9.12,P4-Other,Mixed,نامه-رهبری,GSC-measured
+محکوم له کیه,0,8,0.0,9.25,P4-Other,Mixed,سایر,GSC-measured
+ابلاغ الکترونیک قضایی عدل ایران,0,8,0.0,9.5,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه لایحه بعد از جلسه رسیدگی,0,8,0.0,9.62,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه اجراییه چک,0,8,0.0,9.75,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه لایحه دفاعیه ایراد عدم توجه دعوا,0,8,0.0,14.75,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست انحصار وراثت,0,8,0.0,84.38,P4-Other,Transactional/Sample,سایر,GSC-measured
+اعتراض ثالث اجرایی با سند عادی,3,7,42.86,13.29,P4-Other,Mixed,اجرای-احکام,GSC-measured
+نمونه متن درخواست عفو و بخشودگی,1,7,14.29,8.57,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه وکالت اداره کار,1,7,14.29,9.14,P4-Other,Transactional/Sample,سایر,GSC-measured
+آگهی مزایده دادگستری,1,7,14.29,10.14,P4-Other,Mixed,مزایده,GSC-measured
+نمونه متن اظهارنامه,1,7,14.29,14.57,P4-Other,Transactional/Sample,سایر,GSC-measured
+سامانه جستجوی وکیل,1,7,14.29,18.14,P4-Other,Navigational,سایر,GSC-measured
+نمونه اعتراض به قرار وثیقه سنگین,0,7,0.0,3.43,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+متن درخواست از فرمانداری,0,7,0.0,4.71,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+صندوق حمایت وکلا جستجوی وکیل,0,7,0.0,5.14,P4-Other,Mixed,سایر,GSC-measured
+نمونه درخواست اعمال ماده 3 قانون نحوه اجرای محکومیت های مالی,0,7,0.0,6.86,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن درخواست از شهرداری,0,7,0.0,7.14,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+سامانه عدل ایران وکلا,0,7,0.0,7.57,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+نمونه دادخواست مطالبه مهریه و تامین خواسته,0,7,0.0,8.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+درخواست نوشتن شروع نامه به رهبری,0,7,0.0,8.29,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+ایران عدل ابلاغیه,0,7,0.0,8.43,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+محکوم له چه کسی است,0,7,0.0,8.57,P4-Other,Mixed,سایر,GSC-measured
+دادخواست توقف عملیات اجرایی چک,0,7,0.0,8.71,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه لایحه درخواست تخفیف مجازات,0,7,0.0,8.71,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست فسخ معامله خودرو به دلیل خیار عیب,0,7,0.0,8.86,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه درخواست جلب,0,7,0.0,8.86,P4-Other,Transactional/Sample,سایر,GSC-measured
+ابلاغیه های ثنا,0,7,0.0,9.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+سایت مزایده دادگستری,0,7,0.0,9.0,P4-Other,Navigational,مزایده,GSC-measured
+نمونه دادخواست توقیف عملیات اجرایی,0,7,0.0,9.0,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+مزایده قوه قضایی,0,7,0.0,9.14,P4-Other,Mixed,مزایده,GSC-measured
+معنی کلمه محکوم له,0,7,0.0,9.14,P4-Other,Mixed,سایر,GSC-measured
+نمونه لایحه اعتراض به قرار بازداشت موقت,0,7,0.0,9.14,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+سایت مزایده قوه قضائیه,0,7,0.0,9.29,P4-Other,Navigational,مزایده,GSC-measured
+لایحه تخفیف مجازات,0,7,0.0,9.29,P4-Other,Transactional/Sample,سایر,GSC-measured
+جستجو وکیل کانون مرکز,0,7,0.0,9.43,P4-Other,Mixed,سایر,GSC-measured
+سایت دفتر خدمات قضایی,0,7,0.0,9.43,P4-Other,Navigational,سایر,GSC-measured
+ابلغیهدادگاه,0,7,0.0,9.57,P4-Other,Mixed,سایر,GSC-measured
+ثبت نام خودکاربری دانش حقوقی,0,7,0.0,9.57,P4-Other,Mixed,سایر,GSC-measured
+دادخواست حقوقی مطالبه وجه,0,7,0.0,9.57,P4-Other,Transactional/Sample,سایر,GSC-measured
+معنی محکوم له چیست,0,7,0.0,9.57,P4-Other,Informational,سایر,GSC-measured
+نمونه درخواست تعلیق اجرای مجازات,0,7,0.0,9.57,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اعسار از رد مال,0,7,0.0,9.86,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نمونه دادخواست توقف عملیات اجرایی,0,7,0.0,9.86,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه جلب,0,7,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست تایید فسخ معامله,0,7,0.0,10.14,P4-Other,Transactional/Sample,سایر,GSC-measured
+سامانه خودکاربری اشخاص حقوقی ثنا,0,7,0.0,11.29,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+سامانه مزایده املاک کشور,0,7,0.0,11.29,P4-Other,Navigational,مزایده,GSC-measured
+icbar.ir,0,7,0.0,12.86,P4-Other,Mixed,سایر,GSC-measured
+دادخواست مطالبه وجه,0,7,0.0,65.29,P4-Other,Transactional/Sample,سایر,GSC-measured
+استعلام وکیل با شماره پروانه,2,6,33.33,13.5,P4-Other,Mixed,سایر,GSC-measured
+نمونه قرار قبولی اعاده دادرسی کیفری,1,6,16.67,6.83,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست فسخ قرارداد اجاره به دلیل عدم پرداخت اجاره بها,1,6,16.67,7.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+لاستیک دولتی با برگ سبز ماشین,1,6,16.67,7.5,P4-Other,Mixed,سایر,GSC-measured
+نامه به فرمانداری برای درخواست وام,1,6,16.67,10.0,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+متن وکالت کاری و اداری,1,6,16.67,13.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+جستجوی وکیل کانون وکلا,1,6,16.67,13.17,P4-Other,Mixed,سایر,GSC-measured
+نمونه نوشتن لایحه به دادگاه,1,6,16.67,18.17,P4-Other,Transactional/Sample,سایر,GSC-measured
+عدل ایران اشخاص حقوقی,0,6,0.0,5.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+جستجوی وکیل صندوق حمایت,0,6,0.0,6.83,P4-Other,Mixed,سایر,GSC-measured
+ابلاغیه ثنا الکترونیکی,0,6,0.0,8.33,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه درخواست کارشناس سه نفره,0,6,0.0,8.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست صدور شناسنامه,0,6,0.0,8.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+کانون وکلای مرکز جستجوی وکیل,0,6,0.0,8.67,P4-Other,Mixed,سایر,GSC-measured
+اظهارنامه ماده 156,0,6,0.0,8.83,P4-Other,Mixed,سایر,GSC-measured
+نمونه لایحه اعاده دادرسی کیفری فروش مال غیر,0,6,0.0,8.83,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست غش در معامله,0,6,0.0,9.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه نامه درخواست مجوز ساخت از شهرداری,0,6,0.0,9.0,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+دادخواست تایید فسخ قرارداد,0,6,0.0,9.17,P4-Other,Transactional/Sample,سایر,GSC-measured
+عدلیران ابلاغیه الکترونیکی,0,6,0.0,9.17,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+ابلاغیه اعدل ایران,0,6,0.0,9.33,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+خودکاربری دانش حقوقی,0,6,0.0,9.33,P4-Other,Mixed,سایر,GSC-measured
+نمونه نامه به شهرداری برای ساخت غیر مجاز,0,6,0.0,9.33,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+ابلاغیه دادگستری الکترونیکی,0,6,0.0,9.5,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+خودکاربری,0,6,0.0,9.5,P4-Other,Mixed,سایر,GSC-measured
+قوه قضاییه مزایده,0,6,0.0,9.5,P4-Other,Mixed,مزایده,GSC-measured
+نمونه دادخواست ثالث اجرایی,0,6,0.0,9.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+تفاوت دادنامه با ابلاغیه,0,6,0.0,9.67,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+رفع توقیف مستثنیات دین در اداره ثبت,0,6,0.0,9.67,P4-Other,Mixed,اجرای-احکام,GSC-measured
+استعلام کانون وکلا,0,6,0.0,9.83,P4-Other,Mixed,سایر,GSC-measured
+ثبت درخواست در سامانه سامد,0,6,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+محکوم و محکوم علیه کیست,0,6,0.0,10.0,P4-Other,Mixed,سایر,GSC-measured
+مزایده دادگاه,0,6,0.0,10.0,P4-Other,Mixed,مزایده,GSC-measured
+نمونه لایحه کیفری,0,6,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه اعتراض به قرار منع تعقیب دادسرا,0,6,0.0,12.17,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه اعتراض به قرار منع تعقیب به دلیل عدم پیگیری شاکی,0,6,0.0,13.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه اعتراض به قرار منع تعقیب,0,6,0.0,16.17,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه اعتراض به نظریه کارشناسی سه نفره,0,6,0.0,19.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+تنظیم دادخواست رایگان,0,6,0.0,90.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست مرخصی زندانی,2,5,40.0,6.8,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه شکواییه کیفری,2,5,40.0,22.6,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اداره کار word,1,5,20.0,7.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+کاربرگ اعسار از هزینه دادرسی,1,5,20.0,9.2,P4-Other,Mixed,اعسار,GSC-measured
+سامانه وکلا عدل ایران,1,5,20.0,9.6,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+نمونه درخواست تمدید مرخصی زندانی,1,5,20.0,9.8,P4-Other,Transactional/Sample,سایر,GSC-measured
+شکایت از متهم ناشناس,1,5,20.0,11.2,P4-Other,Mixed,سایر,GSC-measured
+نمونه درخواست استمهال از اجرای احکام,1,5,20.0,11.8,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه رفع توقیف خودرو حامل مواد مخدر,1,5,20.0,15.6,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+سامانه ثبت نام لاستیک دولتی سواری,1,5,20.0,33.8,P4-Other,Navigational,سایر,GSC-measured
+نمونه نامه به فرمانداری,0,5,0.0,3.6,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه نامه رفع توقیف خودرو,0,5,0.0,5.8,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه نامه درخواست از بخشداری,0,5,0.0,6.8,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+ابلاغ ثنا الکترونیکی,0,5,0.0,7.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+ung h,0,5,0.0,7.2,P4-Other,Mixed,سایر,GSC-measured
+سایت نامه به رهبر,0,5,0.0,7.6,P4-Other,Navigational,نامه-رهبری,GSC-measured
+لایحه دفاعیه الزام به اخذ پایان کار,0,5,0.0,7.6,P4-Other,Transactional/Sample,سایر,GSC-measured
+سامانه حراج قوه قضاییه,0,5,0.0,7.8,P4-Other,Navigational,مزایده,GSC-measured
+عدل ایران خودکاربری وکلا,0,5,0.0,8.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+لایحه تسلیم به رای کیفری,0,5,0.0,8.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه قرار تشدید تامین,0,5,0.0,8.2,P4-Other,Transactional/Sample,سایر,GSC-measured
+اعتراض ثالث اجرایی با شهادت شهود,0,5,0.0,8.4,P4-Other,Mixed,اجرای-احکام,GSC-measured
+درخواست وام از بیت رهبری,0,5,0.0,8.4,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+لایحه درخواست جلب,0,5,0.0,8.4,P4-Other,Transactional/Sample,سایر,GSC-measured
+سامانه خودکاربری عدل ایران,0,5,0.0,8.6,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+سامانه دفاتر خدمات قضایی,0,5,0.0,8.6,P4-Other,Navigational,سایر,GSC-measured
+لایحه جلب,0,5,0.0,8.6,P4-Other,Transactional/Sample,سایر,GSC-measured
+eblag,0,5,0.0,9.0,P4-Other,Mixed,سایر,GSC-measured
+عدالایران,0,5,0.0,9.0,P4-Other,Mixed,سایر,GSC-measured
+نامه به رئیس بهزیستی کشور,0,5,0.0,9.0,P4-Other,Mixed,سایر,GSC-measured
+نمونه درخواست صدور اجراییه چک صیادی,0,5,0.0,9.0,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه شکواییه سرقت خودرو,0,5,0.0,9.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+فرم اعتراض به قرار منع تعقیب,0,5,0.0,9.2,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن درخواست مسدودی چک,0,5,0.0,9.2,P4-Other,Transactional/Sample,چک,GSC-measured
+کانون وکلای دادگستری مرکز جستجوی وکیل,0,5,0.0,9.4,P4-Other,Mixed,سایر,GSC-measured
+سایت مزایده اجرای احکام دادگستری,0,5,0.0,9.6,P4-Other,Navigational,مزایده,GSC-measured
+خرید لاستیک با برگ سبز,0,5,0.0,9.8,P4-Other,Mixed,سایر,GSC-measured
+متن لایحه,0,5,0.0,9.8,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست دستور تخلیه و مطالبه اجور معوقه,0,5,0.0,9.8,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه شکایت کارگر از کارفرما,0,5,0.0,10.4,P4-Other,Transactional/Sample,سایر,GSC-measured
+چطور به رهبر نامه بنویسم,0,5,0.0,10.8,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نمونه درخواست رفع توقیف حقوق,0,5,0.0,11.6,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+سایت مزایدات قوه قضاییه,0,5,0.0,11.8,P4-Other,Navigational,سایر,GSC-measured
+نمونه دادخواست ابطال اجراییه و توقف عملیات اجرایی,0,5,0.0,11.8,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه دادخواست تایید فسخ قرارداد و استرداد مبیع,0,5,0.0,11.8,P4-Other,Transactional/Sample,سایر,GSC-measured
+لایحه رفع توقیف خودرو,0,5,0.0,12.4,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه نوشتن اظهارنامه,0,5,0.0,14.8,P4-Other,Transactional/Sample,سایر,GSC-measured
+مراحل مزایده خودرو در اجرای احکام,0,5,0.0,15.4,P4-Other,Mixed,مزایده,GSC-measured
+ثبت نام لاستیک,0,5,0.0,15.6,P4-Other,Mixed,سایر,GSC-measured
+ابلاغیه جدید در سامانه ثنا,0,5,0.0,15.8,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+نمونه لایحه دفاعیه در جلسه رسیدگی,0,5,0.0,15.8,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست رفع تصرف از ملک مشاع,0,5,0.0,16.8,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست ابطال اجراییه دادگاه,0,5,0.0,17.6,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه لایحه تقاضای تخفیف و تعلیق مجازات,0,5,0.0,18.2,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه وکالت جامع کاری و اداری,0,5,0.0,22.2,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه اظهارنامه قضایی الکترونیکی,0,5,0.0,26.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه قبول نظریه کارشناسی,0,5,0.0,35.6,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه رسید بیعانه خودرو,0,5,0.0,44.4,P4-Other,Transactional/Sample,سایر,GSC-measured
+دادخواست,0,5,0.0,70.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+بهترین وکیل اجرت المثل در تهران,0,5,0.0,94.6,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست مطالبه وجه چک و خسارت تاخیر تادیه,2,4,50.0,16.75,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه لایحه درخواست آزادی مشروط,1,4,25.0,7.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست فسخ معامله و استرداد مبیع,1,4,25.0,9.25,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست رفع تصرف عدوانی و قلع و قمع,1,4,25.0,9.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست رفع تصرف عدوانی حقوقی,1,4,25.0,12.75,P4-Other,Transactional/Sample,سایر,GSC-measured
+ورود به سامانه ۱۱۱,1,4,25.0,15.25,P4-Other,Navigational,سایر,GSC-measured
+icbar.ir جستجوی وکیل,0,4,0.0,5.5,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست ابطال مزایده اجرای احکام مدنی,0,4,0.0,5.5,P4-Other,Transactional/Sample,مزایده,GSC-measured
+متن اجراییه چک,0,4,0.0,6.0,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه دادخواست ابطال چک تضمینی,0,4,0.0,6.5,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه دادخواست الزام به صدور شناسنامه به نام مادر,0,4,0.0,6.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه رفع توقیف,0,4,0.0,6.5,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه درخواست اجراییه چک,0,4,0.0,7.0,P4-Other,Transactional/Sample,چک,GSC-measured
+سافت عریضه رسمی,0,4,0.0,7.25,P4-Other,Mixed,سایر,GSC-measured
+عدل ایران شخص حقوقی,0,4,0.0,8.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه فرم اعسار از پرداخت هزینه دادرسی,0,4,0.0,8.0,P4-Other,Transactional/Sample,اعسار,GSC-measured
+ستاد مزایده دادگستری,0,4,0.0,8.25,P4-Other,Mixed,مزایده,GSC-measured
+وکیل تسخیری رایگان برای طلاق,0,4,0.0,8.25,P4-Other,Mixed,سایر,GSC-measured
+ثبت نام لاستیک دولتی ال 90,0,4,0.0,8.5,P4-Other,Mixed,سایر,GSC-measured
+سامانه جستجوی وکلای دادگستری کانون مرکز,0,4,0.0,8.5,P4-Other,Navigational,سایر,GSC-measured
+سهمیه لاستیک دولتی سواری,0,4,0.0,8.5,P4-Other,Mixed,سایر,GSC-measured
+مزایده قوه قضایه,0,4,0.0,8.5,P4-Other,Mixed,مزایده,GSC-measured
+نمونه نظریه کارشناسی تامین دلیل خودرو,0,4,0.0,8.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+جستجوی وکلای کانون مرکز,0,4,0.0,8.75,P4-Other,Mixed,سایر,GSC-measured
+متن نامه به رهبر انقلاب,0,4,0.0,9.0,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+نمونه دادخواست اعتراض به اجراییه چک,0,4,0.0,9.0,P4-Other,Transactional/Sample,چک,GSC-measured
+تایر دولتی ثبت نام,0,4,0.0,9.25,P4-Other,Mixed,سایر,GSC-measured
+جستجوی وکیل کانون وکلای مرکز,0,4,0.0,9.25,P4-Other,Mixed,سایر,GSC-measured
+سامانه خود کاربری,0,4,0.0,9.25,P4-Other,Navigational,سایر,GSC-measured
+عدل ایران ابلاغ,0,4,0.0,9.25,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه دادخواست تامین دلیل با جلب نظر کارشناس,0,4,0.0,9.25,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه اعمال ماده 3,0,4,0.0,9.25,P4-Other,Transactional/Sample,سایر,GSC-measured
+استعلام وکیل با اسم و فامیلwww 23055 ir,0,4,0.0,9.5,P4-Other,Mixed,سایر,GSC-measured
+سامانه ابلاغ الکترونیکی ثنا عدل ایران,0,4,0.0,9.5,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+متن اعتراض به قرار منع تعقیب دادسرا,0,4,0.0,9.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست ابطال عملیات اجرایی مزایده,0,4,0.0,9.5,P4-Other,Transactional/Sample,مزایده,GSC-measured
+نمونه دادخواست مطالبه مهریه با سند عادی,0,4,0.0,9.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست تسلیم به رای,0,4,0.0,9.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+لاستیک با برگ سبز,0,4,0.0,9.75,P4-Other,Mixed,سایر,GSC-measured
+متن برگرداندن پول پیش مستاجر,0,4,0.0,9.75,P4-Other,Transactional/Sample,سایر,GSC-measured
+درگاه خدمات الکترونیک قضایی,0,4,0.0,10.0,P4-Other,Mixed,سایر,GSC-measured
+سایت مزایده قوه قضاییه ملک,0,4,0.0,10.0,P4-Other,Navigational,مزایده,GSC-measured
+محاسبه آنلاین حق ثبت مهریه,0,4,0.0,10.0,P4-Other,Mixed,سایر,GSC-measured
+نمونه اظهار نامه مطالبه وجه,0,4,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست ابطال مزایده ثبتی,0,4,0.0,10.0,P4-Other,Transactional/Sample,مزایده,GSC-measured
+نمونه دادخواست تصرف عدوانی,0,4,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست منفسخ شدن قرارداد,0,4,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست جلب,0,4,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه جهات رد کارشناس,0,4,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+ورود به سامانه ستاد ایران,0,4,0.0,10.0,P4-Other,Navigational,سایر,GSC-measured
+ویرایش لایحه دفاعیه,0,4,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+تبدیل وثیقه به پول,0,4,0.0,10.25,P4-Other,Mixed,وثیقه,GSC-measured
+ارسال نامه به بیت رهبری,0,4,0.0,10.75,P4-Other,Mixed,نامه-رهبری,GSC-measured
+حراج قوه قضاییه,0,4,0.0,10.75,P4-Other,Mixed,مزایده,GSC-measured
+مزایده های دادگستری,0,4,0.0,10.75,P4-Other,Mixed,مزایده,GSC-measured
+حداکثر تعداد هیئت کارشناسی,0,4,0.0,11.25,P4-Other,Mixed,سایر,GSC-measured
+مدت زمان ابلاغ در سامانه ثنا,0,4,0.0,11.5,P4-Other,Informational,ابلاغ-الکترونیک,GSC-measured
+ورود به سامانه مرکز وکلا جستجوی وکیل,0,4,0.0,12.5,P4-Other,Navigational,سایر,GSC-measured
+نمونه رای اعسار از پرداخت جزای نقدی,0,4,0.0,12.75,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نمونه درخواست دستور موقت توقف عملیات اجرایی,0,4,0.0,13.25,P4-Other,Transactional/Sample,سایر,GSC-measured
+لایحه رفع توقیف سند,0,4,0.0,15.5,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه اعتراض شخص ثالث به رای قطعی,0,4,0.0,16.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه اعتراض به قرار عدم دسترسی به پرونده,0,4,0.0,16.75,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه دفاعیه واخواهی کیفری,0,4,0.0,16.75,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست واخواهی و توقف عملیات اجرایی,0,4,0.0,18.25,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه اظهارنامه مطالبه وجه,0,4,0.0,19.25,P4-Other,Transactional/Sample,سایر,GSC-measured
+اعتراض به قرار موقوفی تعقیب,0,4,0.0,24.5,P4-Other,Mixed,سایر,GSC-measured
+ابلاغیه الکترونیکی چیست؟,0,4,0.0,25.75,P4-Other,Informational,ابلاغ-الکترونیک,GSC-measured
+سامانه درخواست مرخصی زندانیان,0,4,0.0,26.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+شماره بیت رهبری برای کمک مالی,0,4,0.0,27.0,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نمونه رای خلاف بین شرع,0,4,0.0,28.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+محاسبه خسارت تاخیر تادیه,0,4,0.0,134.25,P4-Other,Mixed,سایر,GSC-measured
+اعتراض به قرار منع تعقیب,2,3,66.67,27.33,P4-Other,Mixed,سایر,GSC-measured
+فرم درخواست کمک مالی از خیرین,2,3,66.67,109.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه به شهردار,1,3,33.33,7.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه اعتراض ثالث اجرایی,1,3,33.33,9.33,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+تحت پوشش قرار گرفتن کمیته امداد,1,3,33.33,9.67,P4-Other,Mixed,نامه-اداری,GSC-measured
+نمونه لایحه تامین خواسته,1,3,33.33,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه فرم درخواست اعمال ماده 477,1,3,33.33,13.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+دادخواست ابطال اجراییه چک,1,3,33.33,15.67,P4-Other,Transactional/Sample,چک,GSC-measured
+شرایط شرکت در مزایده ملک دادگستری,1,3,33.33,16.0,P4-Other,Mixed,مزایده,GSC-measured
+نمونه لایحه تخفیف مجازات ماده 483,1,3,33.33,18.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست مطالبه مهریه,1,3,33.33,22.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+لایحه نویسی مالیاتی pdf,1,3,33.33,73.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+تقاضای طریقه نوشتن نامه به استانداری,0,3,0.0,3.0,P4-Other,Mixed,نامه-اداری,GSC-measured
+نحوه نوشتن درخواست نمونه نامه به فرمانداری,0,3,0.0,3.0,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+تحت پوشش نحوه نوشتن درخواست برای کمیته امداد,0,3,0.0,3.67,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+متن نامه درخواست وام از بانک,0,3,0.0,4.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+اباغی,0,3,0.0,5.0,P4-Other,Mixed,سایر,GSC-measured
+نامه به بنیاد شهید و امور ایثارگران,0,3,0.0,5.0,P4-Other,Mixed,سایر,GSC-measured
+ورود به سامانه خود کاربری وکلا,0,3,0.0,5.67,P4-Other,Navigational,سایر,GSC-measured
+نمونه دادخواست تنفیذ فسخ قرارداد,0,3,0.0,6.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه نامه اداری درخواست,0,3,0.0,6.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+ابلاغ الکترونیکی عدل ایران,0,3,0.0,7.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+فرم اعسار از پرداخت هزینه دادرسی,0,3,0.0,7.0,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نمونه دادخواست شکایت از کارفرما,0,3,0.0,7.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه شکواییه سرقت لوازم خودرو,0,3,0.0,7.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه به بانک,0,3,0.0,7.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+راهنمای ثبت نام لاستیک دولتی,0,3,0.0,7.67,P4-Other,Informational,سایر,GSC-measured
+سایت ستادایران,0,3,0.0,7.67,P4-Other,Navigational,سایر,GSC-measured
+شماره برگ سبز خودرو برای لاستیک,0,3,0.0,7.67,P4-Other,Mixed,سایر,GSC-measured
+لایحه رفع توقیف,0,3,0.0,7.67,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+مهلت اعتراض به قرار موقوفی تعقیب,0,3,0.0,7.67,P4-Other,Mixed,سایر,GSC-measured
+نمونه فرم قرار قبولی وثیقه,0,3,0.0,7.67,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+نمونه نامه اخطار شهرداری,0,3,0.0,7.67,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+ابلاغیه,0,3,0.0,8.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+ماده قانونی اظهارنامه قضایی,0,3,0.0,8.0,P4-Other,Mixed,سایر,GSC-measured
+محکوم‌به,0,3,0.0,8.0,P4-Other,Mixed,سایر,GSC-measured
+چقدر طول میکشه اظهارنامه ابلاغ بشه,0,3,0.0,8.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+جستجوی وکیل مرکز وکلا قوه قضاییه,0,3,0.0,8.33,P4-Other,Mixed,سایر,GSC-measured
+ورود به سامانه خودکاربری وکلا,0,3,0.0,8.33,P4-Other,Navigational,سایر,GSC-measured
+ابلاغیه الکترونیکی سامانه ثنا,0,3,0.0,8.67,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+متن نامه به شهرداری برای آسفالت کوچه,0,3,0.0,8.67,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+ارسال نامه به دفتر مقام معظم رهبری,0,3,0.0,9.0,P4-Other,Mixed,نامه-رهبری,GSC-measured
+ثبت نام لاستیک دولتی ایران تایر,0,3,0.0,9.0,P4-Other,Mixed,سایر,GSC-measured
+ثبت نام لاستیک ماشین دولتی,0,3,0.0,9.0,P4-Other,Mixed,سایر,GSC-measured
+سایت نامه به بیت رهبری,0,3,0.0,9.0,P4-Other,Navigational,نامه-رهبری,GSC-measured
+متن دادخواست صدور اجراییه چک,0,3,0.0,9.0,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه فرم حکم جلب,0,3,0.0,9.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه تمدید جلب,0,3,0.0,9.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+چجوری برای رهبر نامه بنویسم,0,3,0.0,9.0,P4-Other,Mixed,نامه-رهبری,GSC-measured
+اعتراض به قرار کفالت,0,3,0.0,9.33,P4-Other,Mixed,وثیقه,GSC-measured
+ثنا ابلاغیه الکترونیکی,0,3,0.0,9.33,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نامه به دفتر رهبری برای کمک مالی,0,3,0.0,9.33,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نمونه درخواست رفع توقیف مستثنیات دین,0,3,0.0,9.33,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه فرم اعسار از هزینه دادرسی,0,3,0.0,9.33,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نمونه لایحه اعتراض به قرار منع تعقیب دادسرا,0,3,0.0,9.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه متن نامه درخواست زمین از شهرداری,0,3,0.0,9.33,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+دانلود انواع لایحه های حقوقی,0,3,0.0,9.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+سامانه ابلاغیه الکترونیکی عدل ایران,0,3,0.0,9.67,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+سایت بیت رهبری برای ارسال نامه,0,3,0.0,9.67,P4-Other,Navigational,نامه-رهبری,GSC-measured
+سایت مزایده خودرو قوه قضاییه,0,3,0.0,9.67,P4-Other,Navigational,مزایده,GSC-measured
+سایت نامه به رئیس جمهور,0,3,0.0,9.67,P4-Other,Navigational,سایر,GSC-measured
+نمونه دادخواست ابطال چک,0,3,0.0,9.67,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه درخواست نامه اداری,0,3,0.0,9.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+ابلاغیه الکترونیک قضایی,0,3,0.0,10.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+اظهارنامه پرداخت بدهی,0,3,0.0,10.0,P4-Other,Mixed,سایر,GSC-measured
+حامی وکیل جستجو,0,3,0.0,10.0,P4-Other,Mixed,سایر,GSC-measured
+دانلود فرم لایحه خدمات قضایی,0,3,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه به شهرداری برای فضای سبز,0,3,0.0,10.0,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه دادخواست تامین دلیل خسارت خودرو با جلب نظر کارشناس,0,3,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست حقوقی,0,3,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست مطالبه نفقه فرزند مشترک,0,3,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست تخفیف جزای نقدی,0,3,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه رای نقض قرار موقوفی تعقیب,0,3,0.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نوشتن نامه به رهبر انقلاب,0,3,0.0,10.0,P4-Other,Mixed,نامه-رهبری,GSC-measured
+مهلت اعتراض به رای دادگاه,0,3,0.0,10.33,P4-Other,Mixed,سایر,GSC-measured
+نمونه متن درخواست آزادی وثیقه,0,3,0.0,10.33,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+فرم دادخواست اداره کار,0,3,0.0,10.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+مدارک ثبت نام لاستیک دولتی,0,3,0.0,10.67,P4-Other,Mixed,سایر,GSC-measured
+جستجوی وکیل 187,0,3,0.0,11.0,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست اعاده دادرسی کیفری ماده ۴۷۴ دلیل بند ج,0,3,0.0,11.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن اظهارنامه,0,3,0.0,11.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه ارسال پرونده از شورا به دادگاه,0,3,0.0,11.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه توقف عملیات اجرایی,0,3,0.0,11.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+ارسال نامه به دفتر رهبری,0,3,0.0,11.67,P4-Other,Mixed,نامه-رهبری,GSC-measured
+نمونه دادخواست اعتراض ثالث,0,3,0.0,11.67,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+متن شکایت کلاهبرداری و خیانت در امانت,0,3,0.0,12.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+مزایده املاک دادگستری,0,3,0.0,12.33,P4-Other,Mixed,مزایده,GSC-measured
+فرم اعسار از هزینه دادرسی 1400,0,3,0.0,12.67,P4-Other,Transactional/Sample,اعسار,GSC-measured
+نمونه دادخواست اثبات مستثنیات دین,0,3,0.0,12.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اعتراض ثالث به حکم قطعی,0,3,0.0,13.0,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه اعتراض به قرار عدم دسترسی به پرونده,0,3,0.0,13.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه استعلام از آموزش و پرورش,0,3,0.0,13.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+مشاهده قرار نهایی پرونده,0,3,0.0,14.33,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست مطالبه نفقه زوجه,0,3,0.0,14.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+ابلاغیه الکترونیکی دادگستری,0,3,0.0,15.67,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه متن شکایت از کارفرما,0,3,0.0,15.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+فعال شدن ارسال لایحه خودکاربری اشخاص حقیقی,0,3,0.0,16.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+درخواست کمک هزینه درمان کمیته امداد,0,3,0.0,16.67,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+استعلام وکیل,0,3,0.0,18.33,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست ابطال اجراییه چک ربوی,0,3,0.0,18.33,P4-Other,Transactional/Sample,چک,GSC-measured
+خدمات قضایی انلاین,0,3,0.0,20.0,P4-Other,Mixed,سایر,GSC-measured
+بعد از مهلت ده روزه اجرای احکام,0,3,0.0,20.33,P4-Other,Mixed,سایر,GSC-measured
+متن درخواست وثیقه برای زندانی,0,3,0.0,22.33,P4-Other,Transactional/Sample,وثیقه,GSC-measured
+متن درخواست وام,0,3,0.0,25.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+طریقه نوشتن دادخواست مطالبه وجه,0,3,0.0,27.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه اعتراض به نظریه کارشناسی,0,3,0.0,27.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه آخرین دفاع در دادسرا,0,3,0.0,29.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه اعتراض به قرار منع تعقیب,0,3,0.0,37.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه متن اظهارنامه مطالبه وجه,0,3,0.0,38.33,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه ایراد عدم احراز سمت,0,3,0.0,45.67,P4-Other,Transactional/Sample,سایر,GSC-measured
+اعتراض به قرار منع تعقیب دادسرا در قانون جدید,0,3,0.0,49.0,P4-Other,Mixed,سایر,GSC-measured
+دعاوی چک و اسناد حقوقی,0,3,0.0,55.0,P4-Other,Mixed,چک,GSC-measured
+محاسبه دیه آنلاین,0,3,0.0,73.33,P4-Other,Mixed,سایر,GSC-measured
+توقیف اموال چک برگشتی,0,3,0.0,83.67,P4-Other,Mixed,چک,GSC-measured
+بهترین وکیل تنظیم قرارداد در تهران,0,3,0.0,85.33,P4-Other,Mixed,سایر,GSC-measured
+محاسبه تاخیر تادیه,0,3,0.0,93.33,P4-Other,Mixed,سایر,GSC-measured
+بانک اطلاعات وکلا,0,3,0.0,98.33,P4-Other,Mixed,سایر,GSC-measured
+وکیل مالیاتی در قزوین,0,3,0.0,98.67,P4-Other,Mixed,سایر,GSC-measured
+نامه به بازرسی استانداری,2,2,100.0,9.0,P4-Other,Mixed,نامه-اداری,GSC-measured
+نمونه متن تامین خواسته,2,2,100.0,11.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+محاسبه آنلاین تاخیر تادیه چک در قانون جدید,2,2,100.0,20.0,P4-Other,Mixed,چک,GSC-measured
+اصول نامه نگاری اداری pdf,1,2,50.0,4.5,P4-Other,Mixed,سایر,GSC-measured
+نحوه اعتراض به قرار تامین کیفری,1,2,50.0,6.0,P4-Other,Informational,سایر,GSC-measured
+متن دادخواست اعتراض ثالث اجرایی,1,2,50.0,9.0,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+املاک مزایده ای قوه قضاییه,1,2,50.0,11.0,P4-Other,Mixed,مزایده,GSC-measured
+نمونه اظهارنامه مطالبه وجه و خسارت تاخیر تادیه,1,2,50.0,12.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست رفع توقیف ملک از اجرای احکام,1,2,50.0,13.5,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه لایحه درخواست اجرای قرار تامین خواسته,1,2,50.0,15.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+اگر ابلاغیه الکترونیکی را مشاهده کنیم چه میشود,1,2,50.0,17.5,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+نمونه دادخواست دستور تخلیه فوری دادگاه صلح,1,2,50.0,18.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن شکایت از کارفرما برای رد نکردن بیمه,1,2,50.0,21.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست پابند الکترونیکی از اجرای احکام,1,2,50.0,23.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+خدمات قضایی آنلاین,1,2,50.0,25.0,P4-Other,Mixed,سایر,GSC-measured
+نمونه درخواست پابند,1,2,50.0,26.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه استعلام سه گانه و توقیف اموال,1,2,50.0,27.5,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه درخواست اعمال ماده 483 قانون آیین دادرسی کیفری,1,2,50.0,28.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+اعتراض به قرار منع تعقیب دادسرا,1,2,50.0,29.5,P4-Other,Mixed,سایر,GSC-measured
+فرم دادخواست اعسار از هزینه دادرسی,1,2,50.0,29.5,P4-Other,Transactional/Sample,اعسار,GSC-measured
+تکلیف خواهان بعد از حکم بر بطلان اعسار هزینه دادرسی,1,2,50.0,33.0,P4-Other,Mixed,اعسار,GSC-measured
+نمونه دادخواست اعسار از محکوم به,1,2,50.0,38.5,P4-Other,Transactional/Sample,اعسار,GSC-measured
+ارسال اظهارنامه از طریق خودکاربری اشخاص حقیقی,1,2,50.0,45.5,P4-Other,Mixed,سایر,GSC-measured
+وکیل در غرب تهران,0,2,0.0,1.0,P4-Other,Mixed,سایر,GSC-measured
+نمونه درخواست اجرای حکم رفع تصرف عدوانی,0,2,0.0,2.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+دادخواست نفقه زوجه و فرزند,0,2,0.0,3.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه اداری برای فرمانداری,0,2,0.0,3.0,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نامه برای فرماندار,0,2,0.0,3.0,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه دادخواست و لایحه نویسی,0,2,0.0,3.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نامه به کمیته امداد,0,2,0.0,3.5,P4-Other,Mixed,نامه-اداری,GSC-measured
+لایحه توقیف اموال در تامین خواسته,0,2,0.0,4.0,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+hfgy,0,2,0.0,5.0,P4-Other,Mixed,سایر,GSC-measured
+وکیل رایگان برای افراد بی بضاعت,0,2,0.0,5.0,P4-Other,Mixed,سایر,GSC-measured
+تقاضای نمونه نامه درخواست از شهرداری,0,2,0.0,5.5,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+نمونه نامه به بانک,0,2,0.0,5.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه صلح نامه دستی ملک,0,2,0.0,6.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+ابلاغیع,0,2,0.0,6.5,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+دانلود نمونه دادخواست مطالبه وجه چک وتامین خواسته,0,2,0.0,6.5,P4-Other,Transactional/Sample,چک,GSC-measured
+متن درخواست,0,2,0.0,6.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه برای شهردار,0,2,0.0,6.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست استرداد ثمن معامله,0,2,0.0,6.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه دادگاه,0,2,0.0,6.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+search hamivakil,0,2,0.0,7.0,P4-Other,Mixed,سایر,GSC-measured
+درخواست از رهبری,0,2,0.0,7.0,P4-Other,Transactional/Sample,نامه-رهبری,GSC-measured
+نمونه نامه درخواست وام از بانک,0,2,0.0,7.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+آموزش شرکت در مزایده قوه قضاییه,0,2,0.0,7.5,P4-Other,Mixed,مزایده,GSC-measured
+ثبت نام در مزایده دادگستری,0,2,0.0,8.0,P4-Other,Mixed,مزایده,GSC-measured
+ثبت نام لاستیک دولتی سمند,0,2,0.0,8.0,P4-Other,Mixed,سایر,GSC-measured
+عدل ابلاغیه الکترونیکی,0,2,0.0,8.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+مزایده قوه قضاییه ستاد ایران,0,2,0.0,8.0,P4-Other,Mixed,مزایده,GSC-measured
+نمونه ابلاغ اجراییه مهریه,0,2,0.0,8.0,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه دادخواست اثبات معامله با حق استرداد,0,2,0.0,8.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اعسار از پرداخت هزینه دادرسی مرحله تجدیدنظر,0,2,0.0,8.0,P4-Other,Transactional/Sample,اعسار,GSC-measured
+ابلاغیه%e2%80%8cهای,0,2,0.0,8.5,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+ثنا عدل ایران ابلاغیه,0,2,0.0,8.5,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+دفتر قضایی انلاین,0,2,0.0,8.5,P4-Other,Mixed,سایر,GSC-measured
+عدل ایران ابلاغ الکترونیکی,0,2,0.0,8.5,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+قیمت لاستیک با برگه سبز,0,2,0.0,8.5,P4-Other,Mixed,سایر,GSC-measured
+ماده اظهارنامه,0,2,0.0,8.5,P4-Other,Mixed,سایر,GSC-measured
+مناقصه قوه قضاییه,0,2,0.0,8.5,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست تایید فسخ,0,2,0.0,8.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه درخواست توقف عملیات اجرایی,0,2,0.0,8.5,P4-Other,Transactional/Sample,سایر,GSC-measured
+ورق عریضه رسمی,0,2,0.0,8.5,P4-Other,Mixed,سایر,GSC-measured
+وکیل,0,2,0.0,8.5,P4-Other,Mixed,سایر,GSC-measured
+آگهی مزایده قوه قضاییه,0,2,0.0,9.0,P4-Other,Mixed,مزایده,GSC-measured
+ابلاغيه ثنا,0,2,0.0,9.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+ابلاغیه داداگاه,0,2,0.0,9.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+تاخیر در اجرای سرویس سامانه ثنا,0,2,0.0,9.0,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+ثبت نام لاستیک دنا دولتی,0,2,0.0,9.0,P4-Other,Mixed,سایر,GSC-measured
+ثبت نام لاستیک دولتی دنا,0,2,0.0,9.0,P4-Other,Mixed,سایر,GSC-measured
+ثنا ابلاغ الکترونیک,0,2,0.0,9.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+خرید لاستیک با برگه سبز,0,2,0.0,9.0,P4-Other,Mixed,سایر,GSC-measured
+سامانه خودکاربری اشخاص حقیقی عدل ایران,0,2,0.0,9.0,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+سامانه عدل ایران ابلاغیه الکترونیکی قضایی,0,2,0.0,9.0,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+سایت عدل ایران ابلاغیه,0,2,0.0,9.0,P4-Other,Navigational,ابلاغ-الکترونیک,GSC-measured
+لایحه اسقاط حق تجدید نظر خواهی کیفری,0,2,0.0,9.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+متن نامه اعتراض به فرمانداری,0,2,0.0,9.0,P4-Other,Transactional/Sample,نامه-اداری,GSC-measured
+متن نامه به بهزیستی,0,2,0.0,9.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+مزایده ماشین قوه قضاییه,0,2,0.0,9.0,P4-Other,Mixed,مزایده,GSC-measured
+نمونه درخواست مرخصی از زندان,1,1,100.0,3.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست الزام به صدور شناسنامه,1,1,100.0,4.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+عدل ایران خودکاربری,1,1,100.0,7.0,P4-Other,Mixed,ابلاغ-الکترونیک,GSC-measured
+ثبت نام لاستیک دولتی سواری شخصی,1,1,100.0,9.0,P4-Other,Mixed,سایر,GSC-measured
+لایحه درخواست اعمال ماده 2 قانون نحوه اجرای محکومیت های مالی,1,1,100.0,9.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه دفاعیه جلسه اول حقوقی,1,1,100.0,9.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه لایحه درخواست کارشناسی خودرو,1,1,100.0,10.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نحوه ثبت اعتراض به قرار دادسرا در سامانه خودکاربری وکلا,1,1,100.0,17.0,P4-Other,Informational,سایر,GSC-measured
+نمونه لایحه اعتراض به قرار منع تعقیب ضرب و جرح,1,1,100.0,17.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+استعلام وضعیت وکیل با نام و نام خانوادگی,1,1,100.0,18.0,P4-Other,Mixed,سایر,GSC-measured
+نمونه دادخواست توقیف اموال برای مهریه,1,1,100.0,18.0,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه دادخواست مطالبه وجه چک صیادی ثبت نشده,1,1,100.0,18.0,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه دادخواست صدور اجراییه چک صیادی,1,1,100.0,19.0,P4-Other,Transactional/Sample,چک,GSC-measured
+لایحه توقف عملیات اجرایی,1,1,100.0,21.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست مطالبه نفقه فرزند توسط مادر,1,1,100.0,24.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+محاسبه دیرکرد چک,1,1,100.0,28.0,P4-Other,Mixed,چک,GSC-measured
+نمونه لایحه دفاعیه ضرب و جرح در دادسرا,1,1,100.0,32.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست تخلیه به دلیل انقضای مدت اجاره,1,1,100.0,37.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست اعتراض ثالث به تامین خواسته,1,1,100.0,39.0,P4-Other,Transactional/Sample,اجرای-احکام,GSC-measured
+نمونه لایحه اعتراض به قرار منع تعقیب کلاهبرداری,1,1,100.0,62.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+فرم تقاضای صدور اجرائیه pdf,1,1,100.0,63.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+نمونه دادخواست مطالبه وجه چک از انتقال دهنده,1,1,100.0,63.0,P4-Other,Transactional/Sample,چک,GSC-measured
+نمونه اعتراض به قرار منع تعقیب افترا,1,1,100.0,74.0,P4-Other,Transactional/Sample,سایر,GSC-measured
+محاسبه تاخیر تادیه آنلاین,1,1,100.0,110.0,P4-Other,Mixed,سایر,GSC-measured

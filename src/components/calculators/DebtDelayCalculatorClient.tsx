@@ -1,0 +1,485 @@
+'use client';
+
+import React, { useState, useId } from 'react';
+import Link from 'next/link';
+import {
+  calculateDebtDelay,
+  AVAILABLE_YEARS,
+  CENTRAL_BANK_MONTHLY_CPI,
+  PERSIAN_MONTH_NAMES,
+  formatToman,
+  toEnglishDigits,
+  formatDigitString,
+  numberToPersianWords,
+} from '@/lib/calculators/legal-formulas';
+import {
+  TrendingUp,
+  ArrowLeft,
+  Scale,
+  ChevronDown,
+  ShieldCheck,
+  Calendar,
+  AlertCircle,
+  X,
+} from 'lucide-react';
+
+export function DebtDelayCalculatorClient() {
+  const [calculationMode, setCalculationMode] = useState<'monthly' | 'annual'>('monthly');
+  const [principalAmount, setPrincipalAmount] = useState<string>('50000000'); // 50 میلیون تومان پیش‌فرض
+  const [currencyUnit, setCurrencyUnit] = useState<'toman' | 'rial'>('toman');
+
+  // سال و ماه سررسید
+  const [dueYear, setDueYear] = useState<number>(1399);
+  const [dueMonth, setDueMonth] = useState<number>(4); // تیر
+
+  // سال و ماه تادیه
+  const [settlementYear, setSettlementYear] = useState<number>(1403);
+  const [settlementMonth, setSettlementMonth] = useState<number>(10); // دی
+
+  const principalInputId = useId();
+  const dueYearId = useId();
+  const dueMonthId = useId();
+  const settlementYearId = useId();
+  const settlementMonthId = useId();
+
+  const cleanNumber = parseInt(toEnglishDigits(principalAmount).replace(/\D/g, ''), 10) || 0;
+  const principalToman = currencyUnit === 'rial' ? Math.round(cleanNumber / 10) : cleanNumber;
+
+  const quickPresets = currencyUnit === 'toman' ? [
+    { label: '۱۰ میلیون', value: '10000000' },
+    { label: '۲۰ میلیون', value: '20000000' },
+    { label: '۵۰ میلیون', value: '50000000' },
+    { label: '۱۰۰ میلیون', value: '100000000' },
+    { label: '۵۰۰ میلیون', value: '500000000' },
+    { label: '۱ میلیارد', value: '1000000000' },
+  ] : [
+    { label: '۱۰۰ میلیون ریال', value: '100000000' },
+    { label: '۵۰۰ میلیون ریال', value: '500000000' },
+    { label: '۱ میلیارد ریال', value: '1000000000' },
+    { label: '۵ میلیارد ریال', value: '5000000000' },
+    { label: '۱۰ میلیارد ریال', value: '10000000000' },
+  ];
+
+  const result = calculateDebtDelay(
+    principalToman,
+    dueYear,
+    settlementYear,
+    calculationMode === 'monthly' ? dueMonth : undefined,
+    calculationMode === 'monthly' ? settlementMonth : undefined
+  );
+
+  const displayTotal =
+    currencyUnit === 'rial' ? result.totalAmountToman * 10 : result.totalAmountToman;
+  const displayPenalty =
+    currencyUnit === 'rial' ? result.delayPenaltyToman * 10 : result.delayPenaltyToman;
+  const displayPrincipal = cleanNumber;
+  const unitLabel = currencyUnit === 'rial' ? 'ریال' : 'تومان';
+
+  // سال‌های موجود در جدول ماهانه (۱۳۹۵ تا ۱۴۰۳)
+  const monthlyAvailableYears = Object.keys(CENTRAL_BANK_MONTHLY_CPI)
+    .map(Number)
+    .sort((a, b) => b - a);
+
+  // سال‌های قابل انتخاب برای تاریخ تأدیه (شامل سال‌های ۱۴۰۵ و ۱۴۰۴ جهت انتخاب تاریخ واقعی کاربر)
+  const selectableSettlementYears = Array.from(
+    new Set([1405, 1404, ...(calculationMode === 'monthly' ? monthlyAvailableYears : AVAILABLE_YEARS)])
+  ).sort((a, b) => b - a);
+
+  const dueMonthName = PERSIAN_MONTH_NAMES.find((m) => m.id === dueMonth)?.name || '';
+  const settlementMonthName = PERSIAN_MONTH_NAMES.find((m) => m.id === settlementMonth)?.name || '';
+
+  return (
+    <div className="space-y-10">
+      {/* Interactive Form Card */}
+      <div className="p-6 sm:p-8 rounded-3xl bg-slate-900/90 border border-slate-800 shadow-2xl space-y-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-800">
+          <div className="flex items-center gap-3">
+            <div className="p-3 rounded-2xl bg-blue-500/15 text-blue-400 border border-blue-500/30">
+              <TrendingUp className="w-6 h-6" />
+            </div>
+            <div>
+              <h2 className="text-lg sm:text-xl font-black text-white">
+                محاسبه‌گر رسمی خسارت تاخیر تادیه دین و بدهی
+              </h2>
+              <p className="text-xs text-slate-400">
+                بر اساس ماده ۵۲۲ قانون آیین دادرسی مدنی و شاخص‌های رسمی بانک مرکزی
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2">
+            {/* Unit Switcher */}
+            <div className="flex items-center gap-1.5 p-1 rounded-xl bg-slate-950 border border-slate-800 shrink-0">
+              <button
+                type="button"
+                onClick={() => setCurrencyUnit('toman')}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                  currencyUnit === 'toman'
+                    ? 'bg-[#E5C158] text-slate-950 shadow-sm'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                تومان
+              </button>
+              <button
+                type="button"
+                onClick={() => setCurrencyUnit('rial')}
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                  currencyUnit === 'rial'
+                    ? 'bg-[#E5C158] text-slate-950 shadow-sm'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                ریال
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Calculation Mode Selector */}
+        <div className="flex flex-wrap items-center gap-2 p-1.5 rounded-2xl bg-slate-950 border border-slate-800">
+          <button
+            type="button"
+            onClick={() => setCalculationMode('monthly')}
+            className={`flex-1 py-2.5 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-2 ${
+              calculationMode === 'monthly'
+                ? 'bg-blue-600 text-white shadow-md'
+                : 'text-slate-300 hover:text-white'
+            }`}
+          >
+            <Calendar className="w-4 h-4" />
+            <span>محاسبه ماهانه (جدول شماره ۲ بانک مرکزی - رویه دادگاه‌ها و چک)</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setCalculationMode('annual')}
+            className={`flex-1 py-2.5 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-2 ${
+              calculationMode === 'annual'
+                ? 'bg-blue-600 text-white shadow-md'
+                : 'text-slate-300 hover:text-white'
+            }`}
+          >
+            <Scale className="w-4 h-4" />
+            <span>محاسبه سالانه (رأی وحدت رویه شماره ۸۵۰ دیوان عالی کشور)</span>
+          </button>
+        </div>
+
+        {/* Official Index Transparency Banner */}
+        <div className="p-3.5 rounded-xl bg-blue-500/10 border border-blue-500/25 flex items-center justify-between text-xs text-blue-300">
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="w-4 h-4 text-blue-400 shrink-0" />
+            <span>
+              <strong>شفافیت قانونی:</strong> آخرین شاخص رسمی منتشرشده بانک مرکزی موجود در سامانه{' '}
+              {calculationMode === 'monthly'
+                ? 'اسفند ۱۴۰۳ (شاخص ماهانه ۱۵۸۱.۵)'
+                : 'سال ۱۴۰۳ (شاخص سالانه ۱۸.۳۱۲۷)'}{' '}
+              است. سیستم از هرگونه تولید عدد تخمینی یا فرضی برای بازه‌های فاقد شاخص قطعی خودداری می‌نماید.
+            </span>
+          </div>
+        </div>
+
+        {/* Inputs Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {/* Principal Amount */}
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <label htmlFor={principalInputId} className="block text-xs sm:text-sm font-bold text-slate-200">
+                اصل مبلغ بدهی / چک / سفته ({unitLabel}):
+              </label>
+              {cleanNumber > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setPrincipalAmount('')}
+                  className="text-[11px] text-slate-400 hover:text-blue-400 transition-colors flex items-center gap-1 cursor-pointer"
+                  title="پاک کردن مبلغ"
+                >
+                  <X className="w-3.5 h-3.5" />
+                  <span>پاک کردن</span>
+                </button>
+              )}
+            </div>
+            <div className="relative">
+              <input
+                id={principalInputId}
+                dir="ltr"
+                type="text"
+                inputMode="numeric"
+                autoComplete="off"
+                autoCorrect="off"
+                spellCheck={false}
+                value={principalAmount ? formatDigitString(principalAmount) : ''}
+                onFocus={(e) => e.target.select()}
+                onChange={(e) => {
+                  const raw = toEnglishDigits(e.target.value).replace(/\D/g, '');
+                  setPrincipalAmount(raw);
+                }}
+                placeholder="مثلاً ۵۰,۰۰۰,۰۰۰"
+                className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white font-bold text-base focus:outline-none focus:border-[#E5C158] transition-all pl-16 pr-10 text-left font-mono"
+              />
+              <span className="absolute left-3 top-1/2 -translate-y-1/2 text-xs font-bold text-slate-400 pointer-events-none">
+                {unitLabel}
+              </span>
+              {cleanNumber > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setPrincipalAmount('')}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-slate-500 hover:text-slate-200 transition-colors cursor-pointer"
+                  title="پاک کردن"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              )}
+            </div>
+
+            {/* Quick Amount Presets */}
+            <div className="flex flex-wrap items-center gap-1.5 pt-1">
+              <span className="text-[10px] text-slate-400 font-medium ml-1">مبالغ رایج:</span>
+              {quickPresets.map((p) => (
+                <button
+                  key={p.value}
+                  type="button"
+                  onClick={() => setPrincipalAmount(p.value)}
+                  className={`text-[10px] px-2 py-1 rounded-md border transition-all cursor-pointer ${
+                    principalAmount === p.value
+                      ? 'bg-blue-500/20 text-blue-300 border-blue-500/50'
+                      : 'bg-slate-950 text-slate-400 border-slate-800 hover:text-white hover:border-slate-700'
+                  }`}
+                >
+                  {p.label}
+                </button>
+              ))}
+            </div>
+
+            {cleanNumber > 0 ? (
+              <div className="flex flex-wrap items-center justify-between gap-1 text-[11px] text-slate-300 bg-slate-950/80 px-3 py-1.5 rounded-lg border border-slate-800">
+                <span className="flex items-center gap-1">
+                  <span className="text-slate-400">به عدد:</span>
+                  <strong className="text-blue-400 font-mono">{formatToman(cleanNumber)}</strong>
+                  <span>{unitLabel}</span>
+                </span>
+                <span className="text-slate-400 font-medium">
+                  ({numberToPersianWords(cleanNumber)} {unitLabel})
+                </span>
+              </div>
+            ) : (
+              <p className="text-[11px] text-slate-400">
+                مبلغ مندرج در چک، سفته یا تعهد مالی
+              </p>
+            )}
+          </div>
+
+          {/* Due Date */}
+          <div className="space-y-2">
+            <label className="block text-xs sm:text-sm font-bold text-slate-200">
+              تاریخ سررسید یا مطالبه قانونی:
+            </label>
+            <div className="grid grid-cols-2 gap-2">
+              {calculationMode === 'monthly' && (
+                <div className="relative">
+                  <select
+                    id={dueMonthId}
+                    value={dueMonth}
+                    onChange={(e) => setDueMonth(Number(e.target.value))}
+                    className="w-full px-3 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white font-bold text-xs sm:text-sm focus:outline-none focus:border-[#E5C158] transition-all appearance-none cursor-pointer"
+                  >
+                    {PERSIAN_MONTH_NAMES.map((m) => (
+                      <option key={m.id} value={m.id} className="bg-slate-900 text-white">
+                        {m.name}
+                      </option>
+                    ))}
+                  </select>
+                  <ChevronDown className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                </div>
+              )}
+              <div className={`relative ${calculationMode === 'annual' ? 'col-span-2' : ''}`}>
+                <select
+                  id={dueYearId}
+                  value={dueYear}
+                  onChange={(e) => setDueYear(Number(e.target.value))}
+                  className="w-full px-3 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white font-bold text-xs sm:text-sm focus:outline-none focus:border-[#E5C158] transition-all appearance-none cursor-pointer"
+                >
+                  {(calculationMode === 'monthly' ? monthlyAvailableYears : AVAILABLE_YEARS).map((y) => (
+                    <option key={y} value={y} className="bg-slate-900 text-white">
+                      سال {y}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+              </div>
+            </div>
+            <p className="text-[11px] text-slate-400">
+              تاریخ گواهی عدم پرداخت چک یا ابلاغ اظهارنامه
+            </p>
+          </div>
+
+          {/* Settlement Date */}
+          <div className="space-y-2">
+            <label className="block text-xs sm:text-sm font-bold text-slate-200">
+              تاریخ تادیه / اجرای حکم:
+            </label>
+            <div className="grid grid-cols-2 gap-2">
+              {calculationMode === 'monthly' && (
+                <div className="relative">
+                  <select
+                    id={settlementMonthId}
+                    value={settlementMonth}
+                    onChange={(e) => setSettlementMonth(Number(e.target.value))}
+                    className="w-full px-3 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white font-bold text-xs sm:text-sm focus:outline-none focus:border-[#E5C158] transition-all appearance-none cursor-pointer"
+                  >
+                    {PERSIAN_MONTH_NAMES.map((m) => (
+                      <option key={m.id} value={m.id} className="bg-slate-900 text-white">
+                        {m.name}
+                      </option>
+                    ))}
+                  </select>
+                  <ChevronDown className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                </div>
+              )}
+              <div className={`relative ${calculationMode === 'annual' ? 'col-span-2' : ''}`}>
+                <select
+                  id={settlementYearId}
+                  value={settlementYear}
+                  onChange={(e) => setSettlementYear(Number(e.target.value))}
+                  className="w-full px-3 py-3 rounded-xl bg-slate-950 border border-slate-700 text-white font-bold text-xs sm:text-sm focus:outline-none focus:border-[#E5C158] transition-all appearance-none cursor-pointer"
+                >
+                  {selectableSettlementYears.map((y) => (
+                    <option key={y} value={y} className="bg-slate-900 text-white">
+                      سال {y} {y === 1403 ? '(آخرین شاخص رسمی منتشرشده بانک مرکزی)' : ''}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+              </div>
+            </div>
+            <p className="text-[11px] text-slate-400">
+              شاخص زمان تادیه: {result.isAvailable ? result.settlementCpi : 'عدم انتشار رسمی'}
+            </p>
+          </div>
+        </div>
+
+        {/* Results Screen */}
+        {result.isAvailable ? (
+          <div className="p-5 sm:p-7 rounded-2xl bg-gradient-to-r from-blue-950/40 via-slate-950 to-blue-950/40 border-2 border-blue-500/50 shadow-xl space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pb-4 border-b border-slate-800">
+              <div>
+                <div className="text-xs text-slate-400">اصل مبلغ دین:</div>
+                <div className="text-base sm:text-lg font-bold text-white">
+                  {formatToman(displayPrincipal)} {unitLabel}
+                </div>
+              </div>
+
+              <div>
+                <div className="text-xs text-amber-400 font-bold">خسارت تاخیر تادیه (دیرکرد قانونی):</div>
+                <div className="text-base sm:text-lg font-black text-amber-400">
+                  + {formatToman(displayPenalty)} {unitLabel}
+                </div>
+              </div>
+
+              <div>
+                <div className="text-xs text-emerald-400 font-bold">مجموع کل قابل مطالبه در دادگاه:</div>
+                <div className="text-xl sm:text-2xl font-black text-emerald-400">
+                  {formatToman(displayTotal)} {unitLabel}
+                </div>
+              </div>
+            </div>
+
+            <div className="text-xs text-slate-300 leading-relaxed bg-slate-950/70 p-3 rounded-xl border border-slate-800">
+              <p>
+                <strong className="text-white">فرمول محاسباتی ماده ۵۲۲:</strong>{' '}
+                ({result.settlementCpi} [شاخص {calculationMode === 'monthly' ? `${settlementMonthName} ${settlementYear}` : `سال ${settlementYear}`}]) ÷ ({result.dueCpi} [شاخص {calculationMode === 'monthly' ? `${dueMonthName} ${dueYear}` : `سال ${dueYear}`}]) × {formatToman(displayPrincipal)} ={' '}
+                <strong className="text-emerald-400">{formatToman(displayTotal)} {unitLabel}</strong>
+                <span className="block mt-1 text-slate-400 text-[11px]">
+                  ضریب تغییر شاخص تورم: {result.multiplier} برابر
+                </span>
+              </p>
+            </div>
+          </div>
+        ) : (
+          <div className="p-5 rounded-2xl bg-rose-950/30 border border-rose-500/40 text-rose-200 flex items-start gap-3">
+            <AlertCircle className="w-5 h-5 text-rose-400 shrink-0 mt-0.5" />
+            <div className="space-y-1">
+              <div className="font-bold text-sm">عدم امکان محاسبه قانونی</div>
+              <p className="text-xs leading-relaxed text-rose-300">
+                {result.errorMessage || 'شاخص رسمی بانک مرکزی برای تاریخ انتخابی منتشر نشده است؛ بنابراین محاسبه دقیق قانونی در حال حاضر امکانپذیر نیست.'}
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* CTA Next Action */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 sm:p-5 rounded-2xl bg-slate-950 border border-slate-800">
+          <div className="flex items-center gap-3">
+            <Scale className="w-5 h-5 text-[#E5C158] shrink-0" />
+            <p className="text-xs sm:text-sm text-slate-200">
+              آیا مایل به تنظیم دادخواست رسمی <strong>مطالبه وجه به انضمام خسارت تاخیر تادیه</strong> و خسارات دادرسی هستید؟
+            </p>
+          </div>
+          <div className="flex items-center gap-2.5 w-full sm:w-auto shrink-0">
+            <Link
+              href="/samples/sayad-check-claim-petition"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#E5C158] hover:bg-[#f3d376] text-slate-950 font-black text-xs transition-colors shadow-md whitespace-nowrap"
+            >
+              <span>نمونه دادخواست چک صیادی</span>
+              <ArrowLeft className="w-3.5 h-3.5" />
+            </Link>
+            <Link
+              href="/services/check-claim"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs transition-colors whitespace-nowrap"
+            >
+              <span>سفارش تنظیم دادخواست</span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Guide FAQs */}
+      <div className="space-y-6">
+        <h3 className="text-xl sm:text-2xl font-black text-white">
+          شروط قانونی دریافت خسارت تاخیر تادیه (ماده ۵۲۲ قانون آیین دادرسی مدنی)
+        </h3>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-2">
+            <h4 className="text-sm sm:text-base font-bold text-blue-400 flex items-center gap-2">
+              <ShieldCheck className="w-4 h-4 shrink-0" />
+              <span>شرط اول: موضوع دین وجه رایج (پول نقد) باشد</span>
+            </h4>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              خسارت تاخیر تادیه تنها به دیونی تعلق می‌گیرد که موضوع آن پول نقد ایرانی باشد. در مورد تعهدات غیرپولی، تحویل کالا، طلا یا ارز، احکام خسارت عدم انجام تعهد جاری است.
+            </p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-2">
+            <h4 className="text-sm sm:text-base font-bold text-blue-400 flex items-center gap-2">
+              <ShieldCheck className="w-4 h-4 shrink-0" />
+              <span>شرط دوم: مطالبه رسمی توسط داین (طلبکار)</span>
+            </h4>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              در چک‌های بانکی، تاریخ گواهی عدم پرداخت (برگشت زدن چک) تاریخ مطالبه محسوب می‌شود. اما در مورد سفته و دیون عادی، ارسال اظهارنامه رسمی یا ثبت دادخواست ملاک شروع محاسبه است.
+            </p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-2">
+            <h4 className="text-sm sm:text-base font-bold text-blue-400 flex items-center gap-2">
+              <ShieldCheck className="w-4 h-4 shrink-0" />
+              <span>شرط سوم: تمکن مدیون و امتناع از پرداخت</span>
+            </h4>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              بدهکار باید با وجود توانایی مالی از پرداخت خودداری کرده باشد. اگر بدهکار حکم اعسار گرفته باشد، خسارت تاخیر تادیه تا زمان صدور حکم اعسار یا طبق رای دادگاه متوقف می‌شود.
+            </p>
+          </div>
+
+          <div className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-2">
+            <h4 className="text-sm sm:text-base font-bold text-blue-400 flex items-center gap-2">
+              <ShieldCheck className="w-4 h-4 shrink-0" />
+              <span>شرط چهارم: تغییر فاحش قیمت سالانه (تورم)</span>
+            </h4>
+            <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              تغییر قیمت بر اساس شاخص تورم اعلامی بانک مرکزی اثبات می‌شود که با اعمال شاخص در فرمول دادگستری، خسارت به صورت دقیق و ماهانه یا سالانه در حکم دادگاه قید می‌گردد.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
